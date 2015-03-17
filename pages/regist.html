@@ -1,0 +1,32 @@
+<ion-view view-title="注册" hide-footer="true">
+    <ion-content>
+        <div class="login_body">
+            <div class="logo_img">
+                <img src="assets/images/login_logo.png"/>
+            </div>
+            <div class="login_form">
+                <div class="login_form_input">
+                    <i class="iconfont icon-pingguoshouji" ></i>
+                    <input type="text" placeholder="请输入手机号" ng-model="registData.phone">
+                </div>
+                <div class="login_form_input">
+                    <i class="iconfont icon-icon"></i>
+                    <input type="password" placeholder="请输入密码" ng-model="registData.pwd">
+                </div>
+                <div class="login_form_input">
+                    <i class="iconfont icon-iconfontyanzhengma"></i>
+                    <input type="text" placeholder="验证码" ng-model="registData.vercode">
+                    <div class="reciveYzm" ng-click="reqYzw()">
+                        验证码
+                    </div>
+                </div>
+                <div class="login_form_btn">
+                    <button class="button button-full" ng-click="registSub()">
+                        提交注册
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

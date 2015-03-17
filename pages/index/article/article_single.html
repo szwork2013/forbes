@@ -1,0 +1,42 @@
+<ion-view view-title="文章详情" hide-footer="true">
+    <ion-content>
+        <div class="article_single_body">
+            <div class="article_context">
+                <div class="article_title">
+                    {{article.title}}
+                </div>
+                <div class="article_rels">
+                    <div class="tag pv" ng-show="article.pv">
+                        <i class="iconfont icon-iconfontchakan"></i> {{article.pv}}
+                    </div>
+                    <div class="tag signcount" ng-show="article.pv">
+                        <i class="iconfont icon-iconfontzan"></i> {{article.pv}}
+                    </div>
+                    <div class="article_date">
+                        {{article.time | date : 'yyyy-MM-dd'}}
+                    </div>
+                </div>
+                <div class="article_details" ng-bind-html="SkipValidation(article.newscontent)">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<ion-footer-bar style="padding: 0">
+    <div class="lcs_operats">
+        <div class="row">
+            <div class="col col-50" >
+                <a href="#/lcs_history" class="operator_btn lcs_history" >
+                    往届资料
+                </a>
+            </div>
+            <div class="col col-50" >
+                <a href="#/lcs_apply" class="operator_btn lcs_history" >
+                    参加报名
+                </a>
+            </div>
+
+    </div>
+
+
+</ion-footer-bar>

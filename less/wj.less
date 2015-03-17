@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+.wj_body{
+  .default-page-bg-init;
+  .wj_header{
+    width: 100%;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+    font-size: 4vh;
+    color: white;
+    background-color: @theme-color;
+  }
+  .wj_int,.list,.submit_wj{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .wj_int{
+    font-size: 16px;
+  }
+  .quests{
+    .list{
+      .item{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        .quest_til{
+          margin: 5px 0;
+        }
+        .quest_ans{
+          background-color: white;
+          border: 1px solid @default-line-color;
+          border-radius: 5px;
+          .list{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            .item{
+              width: 100%;
+              height: 45px;
+              line-height: 45px;
+              padding: 0 10px;
+              padding-left: 60px;
+              border-bottom: 1px solid rgba(220, 218, 221, 0.53);
+            }
+            .item:last-child{
+              border-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .submit_wj{
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+    font-size: 4vh;
+    color: white;
+    background-color: @theme-color;
+  }
+}
+

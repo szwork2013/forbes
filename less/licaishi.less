@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+.licaishi_body{
+  .default-page-bg-init;
+  .searchHeader{
+    .test_border;
+    .category_list{
+      line-height: 40px;
+      text-align: center;
+      .iconfont{
+        height: 40px;
+        font-size: 40px;
+        color:@theme-color;
+      }
+    }
+    .searchGroup{
+      @radius:10px;
+      line-height:30px;
+      .test_border;
+      .row{
+        border:1px solid @theme-color;
+        border-radius: @radius;
+        padding: 0;
+        .search_inp{
+          height:100%;
+          border-radius:@radius 0 0 @radius;
+          background-color: white;
+        }
+        .search_btn{
+          border-radius:0 @radius  @radius 0;
+          background-color: @theme-color;
+          text-align: center;
+          .iconfont{
+            font-size: 30px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .licaishi_list{
+    .test_border;
+    margin: 0 10px;
+    padding: 0;
+    .item{
+      margin-bottom:10px;
+      padding: 5px;
+      border-radius: 5px;
+      .person_head{
+        width: 20%;
+        float: left;
+        .test_border;
+        .head_img{
+          position: relative;
+          width: 80%;
+          margin: 0 auto;
+          .test_border;
+          img{
+            position: absolute;
+            max-width: 100%;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .head_img:before{
+          content: "";
+          display: block;
+          padding-top: 100%; 	/* initial ratio of 1:1*/
+        }
+      }
+      .licaishi_context{
+        padding: 5px 0;
+        float: left;
+        width: 80%;
+        .test_border;
+        .licaishi_title{
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .licaishi_details{
+          width: 100%;
+          float: left;
+          margin: 5px 0;
+          .default-small-text;
+        }
+      }
+      .licaishi_rels{
+        clear:both;
+        float: left;
+        margin-top: 5px;
+      }
+      .licaishi_tags{
+        clear:both;
+        float: left;
+        margin-top: 5px;
+        .test_border;
+      }
+      .guanzhu{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 5px 0 0 0;
+        text-align: center;
+        background-color: rgba(75, 165, 255, 0.75);
+        color: white;
+      }
+    }
+    .item:last-child{
+      margin-bottom:0;
+    }
+  }
+}

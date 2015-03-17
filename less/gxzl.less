@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.gxzl_body{
+  .default-page-bg-init;
+  padding-top: 10px;
+  .person_main{
+    width: 100%;
+    float: left;
+    .test_border;
+    .person_head{
+      width: 40%;
+      margin: 0 auto;
+      .test_border;
+      .head_img{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        .test_border;
+        img{
+          position: absolute;
+          max-width: 100%;
+          border-radius: 50%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .head_img:before{
+        content: "";
+        display: block;
+        padding-top: 100%; 	/* initial ratio of 1:1*/
+      }
+    }
+  }
+  .update_content{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    .test_border;
+
+    .list{
+      padding: 0;
+      .item{
+        padding: 0;
+        margin: 0;
+        height:60px;
+        border-top:0px;
+        &_name{
+          width: 20%;
+          height: 100%;
+          text-align: right;
+          line-height: 60px;
+          font-size: 20px;
+          float: left;
+          .test_border;
+        }
+        &_context{
+          width: 80%;
+          height: 100%;
+          float: left;
+          padding-left: 15px;
+          .test_border;
+          input{
+            height: 100%;
+            font-size: 15px;
+          }
+        }
+
+      }
+    }
+  }
+  .operators{
+    .test_border;
+    width: 100%;
+    float: left;
+    .operator{
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      height: 40px;
+      line-height: 40px;
+      .test_border;
+    }
+    .update{
+      background-color: @theme-color;
+    }
+    .cancel{
+      background-color: rgba(75, 165, 255, 0.50);
+    }
+  }
+  .person_rels{
+    margin-top: 20px;
+//    border-top:1px solid rgba(70, 66, 66, 0.49);
+    .list{
+      padding: 0;
+      .item{
+        padding: 0;
+        margin: 0;
+        height:60px;
+        line-height: 60px;
+        .item_icon{
+          width: 10%;
+          height: 100%;
+          float: left;
+          .iconfont{
+            font-size: 25px;
+          }
+          .test_border;
+        }
+        .item_context{
+          width: 80%;
+          height: 100%;
+          float: left;
+          font-size: 14px;
+          .test_border;
+        }
+        .item_more{
+          width: 10%;
+          float: left;
+          height: 100%;
+          .test_border;
+          text-align: right;
+        }
+        .jf{
+          color: red;
+        }
+        .wt{
+          color: rgba(3, 153, 174, 0.50);
+        }
+        .hd{
+          color: rgba(208, 200, 28, 0.50);
+        }
+        .wj{
+          color: @theme-color;
+        }
+        .gz{
+          color: red;
+        }
+      }
+    }
+
+  }
+}

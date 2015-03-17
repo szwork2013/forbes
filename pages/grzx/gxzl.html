@@ -1,0 +1,50 @@
+<ion-view view-title="更新资料" hide-footer="true">
+    <ion-content>
+        <div class="gxzl_body">
+            <div class="person_main">
+                <div class="person_head">
+                    <div class="head_img">
+                        <img ng-src="{{personinf.headimg}}" />
+                    </div>
+                </div>
+            </div>
+            <div class="update_content">
+                <div class="list">
+                    <div class="item">
+                        <div class="item_name">
+                            姓名
+                        </div>
+                        <div class="item_context">
+                            <input type="text"  ng-model="personinf.truename" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_name" >
+                            职位
+                        </div>
+                        <div class="item_context">
+                            <input type="text" ng-model="personinf.postion"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_name" >
+                            公司
+                        </div>
+                        <div class="item_context">
+                            <input type="text" ng-model="personinf.company" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="operators">
+                <div class="operator update" ng-click="gxzl()">
+                    更新资料
+                </div>
+                <div class="operator cancel">
+                    取 消
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
