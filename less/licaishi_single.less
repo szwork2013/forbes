@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.licaishi_single_body{
+  .default-page-bg-init;
+
+  .licaishi_title{
+    width: 100%;
+    min-height: 36vh;
+    .bg_img_cover("../images/lcs_bg.png");
+    padding-top: 2%;
+    &_main{
+      width: 80%;
+      height: 96%;
+      margin:  0 auto;
+      color: white;
+      .test_border;
+      .person_head{
+        width: 50%;
+        margin: 0 auto;
+        .test_border;
+        .head_img{
+          position: relative;
+          width: 80%;
+          margin: 0 auto;
+          .test_border;
+          img{
+            position: absolute;
+            max-width: 100%;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .head_img:before{
+          content: "";
+          display: block;
+          padding-top: 100%; 	/* initial ratio of 1:1*/
+        }
+      }
+      .licaishi_name,.licaishi_rels{
+        text-align: center;
+        font-size: 16px;
+      }
+      .licaishi_rels{
+        margin: 5px 0;
+      }
+      .operators{
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+        height: 5vh;
+        .operator{
+          position: absolute;
+          border-radius: 5px;
+          width: 25vw;
+          height: 5vh;
+          line-height: 5vh;
+          text-align: center;
+          color: white;
+        }
+        .zixun{
+          left: 0;
+          background-color: @theme-color;
+        }
+        .guanzhu{
+          right: 0;
+          background-color: rgba(25, 95, 185, 0.75);
+        }
+      }
+    }
+  }
+
+  .licaishi_details{
+    margin-top: 10px;
+    .details_item{
+      width: 100%;
+      color: @default-line-color;
+      font-size: 13px;
+      margin-top: 1px;
+      .details_title{
+        float: left;
+        text-align: right;
+      }
+      .details_content{
+        .test_border;
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+  }
+}

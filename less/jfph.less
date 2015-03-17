@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.jfph_body{
+  .default-page-bg-init;
+  .qiansan{
+    text-align: center;
+    .fisrt{
+      color: red;
+    }
+    .second{
+      color: rgba(220, 195, 34, 0.98);
+    }
+    .third{
+      color:@theme-color;
+    }
+    .person{
+      position: relative;
+      .person_head{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        .test_border;
+        .head_img{
+          position: relative;
+          width: 80%;
+          margin: 0 auto;
+          .test_border;
+          img{
+            position: absolute;
+            max-width: 100%;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .head_img:before{
+          content: "";
+          display: block;
+          padding-top: 100%; 	/* initial ratio of 1:1*/
+        }
+        .xuhao{
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          z-index: 10;
+          top:5px;
+          left: 15%;
+          background-color: white;
+        }
+        .iconf{
+          position: absolute;
+          right: -5px;
+          bottom: 0;
+          .iconfont{
+            font-size: 20px;
+          }
+        }
+      }
+      .person_name{
+        color: #000000;
+      }
+      .person_jifen{
+        font-size: 22px;
+      }
+    }
+  }
+  .qiyu{
+    padding: 0;
+    .item{
+      padding: 0;
+      margin: 0;
+      height: 70px;
+      border: 0px;
+      .col{
+        padding: 0 5px;
+        line-height: 70px;
+      }
+      .xuhao{
+        text-align: right;
+      }
+      .touxiang{
+        width: 100%;
+        height: 70px;
+        display: table;
+        .person_head{
+          display: table-cell;
+          vertical-align: middle;
+          width: 100%;
+          margin: 0 auto;
+          .test_border;
+          .head_img{
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            .test_border;
+            img{
+              position: absolute;
+              max-width: 100%;
+              border-radius: 50%;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .head_img:before{
+            content: "";
+            display: block;
+            padding-top: 100%; 	/* initial ratio of 1:1*/
+          }
+        }
+      }
+      .jifen{
+        color: @theme-color;
+        font-size: 22px;
+      }
+    }
+
+    .list{
+      padding: 0;
+      margin: 0;
+    }
+    .optc{
+      background-color: transparent;
+    }
+  }
+
+}
