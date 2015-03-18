@@ -9,7 +9,6 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -36,7 +35,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
+        //tasks: ['jshint'],
         options: {
           livereload: true
         }
@@ -194,8 +193,9 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.html'],
-        exclude: ['bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js']
+        src: ['<%= config.app %>/index.html']
+        //,
+        //exclude: ['bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js']
       },
       less: {
         src: ['<%= config.app %>/styles/{,*/}*.{less}'],
