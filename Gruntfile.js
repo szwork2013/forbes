@@ -209,10 +209,10 @@ module.exports = function (grunt) {
         files: {
           src: [
             '<%= config.dist %>/scripts/{,*/}*.js',
-            '<%= config.dist %>/styles/{,*/}*.css',
-            '<%= config.dist %>/images/{,*/}*.*',
-            '<%= config.dist %>/styles/fonts/{,*/}*.*',
-            '<%= config.dist %>/*.{ico,png}'
+            '<%= config.dist %>/styles/{,*/}*.css'
+            //'<%= config.dist %>/images/{,*/}*.*',
+            //'<%= config.dist %>/styles/fonts/{,*/}*.*',
+            //'<%= config.dist %>/*.{ico,png}'
           ]
         }
       }
@@ -227,7 +227,6 @@ module.exports = function (grunt) {
       },
       html: '<%= config.app %>/index.html'
     },
-
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
       options: {
@@ -269,18 +268,18 @@ module.exports = function (grunt) {
         options: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
-          conservativeCollapse: true,
+          conservativeCollapse: false,
           removeAttributeQuotes: true,
           removeCommentsFromCDATA: true,
           removeEmptyAttributes: true,
-          removeOptionalTags: true,
-          removeRedundantAttributes: true,
+          removeOptionalTags: false,
+          removeRedundantAttributes: false,
           useShortDoctype: true
         },
         files: [{
           expand: true,
           cwd: '<%= config.dist %>',
-          src: '{,*/}*.html',
+          src: '**/{,*/}*.html',
           dest: '<%= config.dist %>'
         }]
       }
@@ -299,15 +298,12 @@ module.exports = function (grunt) {
     //     }
     //   }
     // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/scripts/scripts.js': [
-    //         '<%= config.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
+    uglify: {
+      options: {
+        report: 'min',
+        mangle: false
+      }
+    },
     // concat: {
     //   dist: {}
     // },
@@ -333,7 +329,7 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          src: 'bower_components/ionic/release/fonts/*',
           dest: '<%= config.dist %>'
         }]
       },
@@ -414,8 +410,9 @@ module.exports = function (grunt) {
     'uglify',
     'copy:dist',
     'rev',
-    'usemin',
-    'htmlmin'
+    'usemin'
+    //,
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [

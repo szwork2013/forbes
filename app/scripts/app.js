@@ -8,7 +8,7 @@ var app = angular.module('fbs', [
     'fbs.directives',
     'fbs.services'
 ]);
-app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$resourceProvider){
+app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$resourceProvider){
     $resourceProvider.defaults.stripTrailingSlashes = false;
     $ionicConfigProvider.views.maxCache(0);
     $urlRouterProvider.otherwise('/index');
