@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.lcs_apply_body{
+  .default-page-bg-init;
+  .apply_status{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    .test_border;
+  }
+  .apply_area{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: white;
+    .test_border;
+    @line_w:2px;
+
+    .row{
+      padding: 0;
+      height: 80px;
+      color: white;
+      margin-bottom:@line_w;
+      .col{
+        height: 80px;
+        width: 100%;
+        background-color:@default-line-color;
+        display: table;
+        .content{
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+          .test_border;
+        }
+      }
+      .col:first-child{
+        margin-right: @line_w;
+        border-radius: 5px 0 0 0;
+      }
+      .col:last-child{
+        border-radius: 0 5px  0 0;
+      }
+      .select{
+        background-color: @theme-color;
+      }
+    }
+    .row:last-child{
+      margin-bottom:0;
+      .col:first-child{
+        border-radius: 0 0 0 5px;
+      }
+      .col:last-child{
+        border-radius: 0 0 5px 0;
+      }
+    }
+
+  }
+  .apply_form{
+    width: 74%;
+    margin: 0 auto;
+    margin-top: 10px;
+    .test_border;
+    .apply_input{
+      padding: 5px;
+      margin-bottom: 5px;
+      background-color: white;
+      height: 40px;
+      border: 1px solid @default-line-color;
+      border-radius: 5px;
+      input{
+        font-size: 16px;
+        height: 100%;
+      }
+    }
+    .apply_select{
+      margin: 5px;
+      .sexy{
+        background-color: @default-line-color;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        color: white;
+      }
+      .select{
+        background-color: @theme-color;
+      }
+    }
+    .apply_btn{
+      margin-top: 15px;
+      background-color: @theme-color;
+      border-radius: 5px;
+      text-align: center;
+      height: 35px;
+      line-height: 35px;
+      color: white;
+    }
+  }
+}

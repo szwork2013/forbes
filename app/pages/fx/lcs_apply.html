@@ -1,0 +1,67 @@
+<ion-view view-title="理财师申请" hide-footer="true">
+    <ion-content>
+        <div class="lcs_apply_body">
+            <div class="apply_status">
+                报名——复赛——分区决赛——总决赛
+            </div>
+            <div class="apply_area">
+                <div class="row">
+                    <div class="col col-50 select">
+                        <div class="content">
+                            华东赛区
+                            <p>(上海)</p>
+                        </div>
+                    </div>
+                    <div class="col col-50">
+                        <div class="content">
+                            华北及环渤海赛区
+                            <p>(青岛)</p>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="row">
+                    <div class="col col-50">
+                        <div class="content">
+                            华南赛区
+                            <p>(广州)</p>
+                        </div>
+                    </div>
+                    <div class="col col-50">
+                        <div class="content">
+                            中西部赛区
+                            <p>(成都)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apply_form">
+                <div class="apply_input">
+                    <input type="text" placeholder="姓名" />
+                </div>
+                <div class="apply_input">
+                    <input type="text" placeholder="手机"/>
+                </div>
+                <div class="apply_select row">
+                    <div class=" col col-50">
+                        <div class="sexy" ng-class="{select:apply_data.K1 == 1}" ng-click="apply_data.K1 = 1">
+                            男
+                        </div>
+                    </div>
+                    <div class="col col-50">
+                        <div class="sexy "  ng-class="{select:apply_data.K1 == 0}" ng-click="apply_data.K1 = 0">
+                            女
+                        </div>
+                    </div>
+                </div>
+                <div class="apply_input"  ng-repeat="signfield in applyForm.signfield.slice(3)">
+                    <input type="text" placeholder="请输入{{signfield.key}}" ng-model='apply_data[signfield.value]'>
+                </div>
+                <div class="apply_sublime" ng-click="online_apply()">
+                    提 交
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

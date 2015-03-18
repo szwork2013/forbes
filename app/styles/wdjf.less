@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.wdjf_body{
+  .default-page-bg-init;
+  padding-top: 10px;
+  .jf_main{
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+    height: 24vh;
+    min-height: 24vh;
+    .bg_img_h("../images/wdjf_bg.png");
+    .test_border;
+    .jfsl{
+      position:absolute;
+      width: 100px;
+      height:28px;
+      top: 0;bottom: 0;
+      left: 0;right: 0;
+      margin:auto;
+      font-size: 28px;
+      color:white;
+    }
+    .jfsl:after{
+      content: "积分";
+      font-size: 15px;
+      color:white;
+//      .test_border;
+    }
+    .jfgz{
+      position:absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 20px;
+      padding: 10px 15px;
+      background-color: @default-bg-color;
+      border-radius: 5px 0 0 0 ;
+      color:white;
+    }
+  }
+  .jf_list{
+    margin-top: 20px;
+    .list{
+      padding: 0;
+      .item{
+        padding: 0;
+        margin: 0;
+        height:60px;
+        .item_icon{
+          position: relative;
+          @icon_h:35px;
+          width: 15%;
+          height: 100%;
+          min-height: @icon_h + 6px;
+          float: left;
+          text-align: right;
+          &_context{
+            position: absolute;
+            top:0;bottom: 0;
+            left:0;right: 0;
+            margin: auto;
+            width: @icon_h;
+            height: @icon_h;
+            line-height: @icon_h;
+            border-radius: 50%;
+            text-align: center;
+            background-color: red;
+            .iconfont{
+              color: white;
+              font-size: 25px;
+            }
+          }
+        }
+        .item_context{
+          width: 75%;
+          height: 100%;
+          float: left;
+          font-size: 14px;
+          .test_border;
+          .item_context_til{
+            height: 50%;
+            padding-top: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            .test_border;
+          }
+          .item_context_time{
+            height: 50%;
+            font-size: 14px;
+            color: @default-line-color;
+            .test_border;
+          }
+        }
+        .item_more{
+          width: 10%;
+          float: left;
+          height: 100%;
+          padding-top: 10px;
+          text-align: left;
+        }
+        .add_jf{
+          position: relative;
+          color: @theme-color;
+          font-size: 25px;
+        }
+        .add_jf:before{
+          content: "+";
+          position: absolute;
+          top: 5px;
+          left: -10px;
+          font-size: 20px;
+        }
+      }
+    }
+
+  }
+}

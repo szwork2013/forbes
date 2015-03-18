@@ -1,0 +1,82 @@
+<ion-view view-title="理财师详情" hide-footer="true">
+    <ion-content>
+    <div class="licaishi_single_body">
+        <div class="licaishi_title">
+            <div class="licaishi_title_main">
+                <div class="person_head">
+                    <div class="head_img">
+                        <img ng-src="{{licaishi.headimg}}" />
+                    </div>
+                </div>
+                <div class="licaishi_name">{{licaishi.truename}}——{{licaishi.postion}}</div>
+                <div class="licaishi_rels">
+                    关注{{licaishi.attentioncount}}  粉丝{{licaishi.fanscount}}
+                </div>
+                <div class="operators" ng-show="licaishi.canaskorattention">
+                    <a class="operator zixun" ng-click="zixun(licaishi.userid)">
+                        <i class="iconfont icon-iconfontchakan"></i> 咨询
+                    </a>
+                    <div class="operator guanzhu">
+                        <i class="iconfont icon-iconfontchakan"></i> 关注
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="licaishi_details">
+            <div class="details_item row">
+                <div class="details_title col col-20">
+                    企业
+                </div>
+                <div class="details_content col col-80">
+                    {{licaishi.company}}
+                </div>
+            </div>
+            <div class="details_item row">
+
+                <div class="details_title col col-20">
+                    城市
+                </div>
+                <div class="details_content col col-80">
+                    {{licaishi.city}}
+                </div>
+            </div>
+            <div class="details_item row">
+                <div class="details_title col col-20">
+                    简介
+                </div>
+                <div class="details_content col col-80">
+                    {{licaishi.digest}}
+                </div>
+            </div>
+            <div class="details_item row">
+                <div class="details_title col col-20">
+                    标签
+                </div>
+                <div class="details_content col col-80">
+                    <div class="wd_tags">
+                        <div class="tag categoryname" ng-repeat="tag in licaishi.tags">
+                            {{tag}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details_item row">
+                <div class="details_title col col-20">
+                    被咨询
+                </div>
+                <div class="details_content col col-80">
+                    {{licaishi.beaskcount}}人
+                </div>
+            </div>
+            <div class="details_item row">
+                <div class="details_title col col-20">
+                    咨询
+                </div>
+                <div class="details_content col col-80">
+                    {{licaishi.askcount}}人
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
+</ion-view>
