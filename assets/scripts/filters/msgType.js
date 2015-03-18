@@ -1,1 +1,0 @@
-angular.module("fbs.filters").filter("msgTypeFilter",function(){return function(input){var ret;return 0==input&&(ret="发表了文章"),1==input&&(ret="发表了活动"),2==input&&(ret="发表了话题"),3==input&&(ret="回答了话题"),ret}});
