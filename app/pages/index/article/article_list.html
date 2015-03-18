@@ -1,0 +1,48 @@
+<ion-view view-title="文章列表" hide-footer="true">
+    <ion-content>
+        <div class="article_body">
+            <div class="searchHeader">
+                <div class="row">
+                    <div class="col col-20 category_list">
+                        <div class="row">
+                            <i class="iconfont icon-iconfontliebiao"></i>
+                        </div>
+                    </div>
+                    <div class="col searchGroup">
+                        <div class="row">
+                            <div class="col col-75 search_inp">
+                                <input type="text">
+                            </div>
+                            <div class="col col-25 search_btn">
+                                <i class="iconfont icon-iconfontsousuo" ></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list article_list">
+                <a class="item" ng-repeat="article in articles.list" ng-click="details(article.newsid)">
+                    <div class="article_context item-text-wrap">
+                        <div class="article_title">
+                            {{article.title}}
+                        </div>
+                        <div class="article_rels">
+                            <div class="tag categoryname" ng-show="article.categoryname">
+                                {{article.categoryname}}
+                            </div>
+                            <div class="tag pv" ng-show="article.pv">
+                                <i class="iconfont icon-iconfontchakan" ></i> {{article.pv}}
+                            </div>
+                            <div class="article_date">
+                                {{article.time | date : 'yyyy-MM-dd'}}
+                            </div>
+                        </div>
+                        <div class="article_details">
+                            {{article.digest}}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

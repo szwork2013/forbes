@@ -1,0 +1,41 @@
+<ion-view view-title="我的积分" hide-footer="true">
+    <ion-content>
+        <div class="wdjf_body">
+            <div class="jf_main">
+                <div class="jfsl">
+                    1000
+                </div>
+                <div class="jfgz">
+                    积分规则
+                </div>
+            </div>
+            <div class="jf_list">
+                <div class="list">
+                    <div class="item" ng-repeat="wdjf in wdjf.list">
+                        <div class="item_icon">
+                            <div class="item_icon_context">
+                                <i class="iconfont icon-iconfontjifenqia"></i>
+                            </div>
+                        </div>
+                        <div class="item_context">
+                            <div class="item_context_til">
+                                {{wdjf.title}}
+                            </div>
+                            <div class="item_context_time">
+                                {{wdjf.time | date : 'yyyy-MM-dd hh:mm'}}
+                            </div>
+                        </div>
+                        <div class="item_more add_jf">
+                            {{wdjf.score}}
+                        </div>
+                    </div>
+
+                    <!--<div style="margin-top: 20px;">-->
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+

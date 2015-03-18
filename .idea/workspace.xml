@@ -1,243 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f320080-69a2-419d-95dd-dece88b9e577" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\.bin\has-ansi" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\.bin\has-ansi.cmd" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\.bin\strip-ansi" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\.bin\strip-ansi.cmd" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\.bin\supports-color" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\.bin\supports-color.cmd" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\ansi-styles\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\ansi-styles\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\ansi-styles\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\escape-string-regexp\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\escape-string-regexp\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\escape-string-regexp\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\escape-string-regexp\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\has-ansi\cli.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\has-ansi\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\has-ansi\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\has-ansi\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\strip-ansi\cli.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\strip-ansi\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\strip-ansi\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\strip-ansi\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\supports-color\cli.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\supports-color\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\supports-color\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\node_modules\supports-color\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-copy\node_modules\chalk\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\CHANGELOG" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\.bin\has-ansi" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\.bin\has-ansi.cmd" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\.bin\supports-color" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\.bin\supports-color.cmd" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\ansi-styles\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\escape-string-regexp\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\escape-string-regexp\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\escape-string-regexp\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\escape-string-regexp\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\has-ansi\cli.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\has-ansi\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\has-ansi\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\has-ansi\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\supports-color\cli.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\supports-color\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\supports-color\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\chalk\node_modules\supports-color\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\colors\hex-name-shortener.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\colors\hsl.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\colors\rgb.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\properties\extractor.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\properties\reorderable.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\selectors\optimizers\advanced.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\selectors\optimizers\clean-up.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\selectors\optimizers\simple.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\selectors\source-map-stringifier.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\selectors\stringifier.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\text\comments-processor.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\text\expressions-processor.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\text\free-text-processor.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\text\urls-processor.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\chunker.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\compatibility.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\extractors.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\input-source-map-tracker.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\object.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\quote-scanner.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\source-maps.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\source-reader.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\source-tracker.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\splitter.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\lib\utils\url-scanner.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\commander\History.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\Makefile.dryice.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\README.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\assert-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\mini-require.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\prefix-source-map.jsm" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\prefix-utils.jsm" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\suffix-browser.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\suffix-source-map.jsm" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\suffix-utils.jsm" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\test-prefix.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\build\test-suffix.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\array-set.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\base64-vlq.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\base64.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\binary-search.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\mapping-list.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\source-map-consumer.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\source-map-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\source-node.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\lib\source-map\util.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\node_modules\amdefine\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\node_modules\amdefine\README.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\node_modules\amdefine\amdefine.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\node_modules\amdefine\intercept.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\node_modules\amdefine\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\run-tests.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-api.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-array-set.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-base64-vlq.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-base64.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-binary-search.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-dog-fooding.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-source-map-consumer.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-source-map-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-source-node.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\test-util.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\clean-css\node_modules\source-map\test\source-map\util.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\ansi-styles\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\has-ansi\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\has-ansi\node_modules\get-stdin\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\has-ansi\node_modules\get-stdin\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\has-ansi\node_modules\get-stdin\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\chalk\node_modules\supports-color\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\pretty-bytes\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\pretty-bytes\node_modules\get-stdin\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\pretty-bytes\node_modules\get-stdin\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-cssmin\node_modules\maxmin\node_modules\pretty-bytes\node_modules\get-stdin\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\AUTHORS" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\CHANGELOG" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\docs\uglify-examples.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\docs\uglify-options.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\docs\uglify-overview.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\AUTHORS" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\CHANGELOG" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\LICENSE-MIT" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\README.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\lib\contrib.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\node_modules\zlib-browserify\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\node_modules\zlib-browserify\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\node_modules\zlib-browserify\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\node_modules\zlib-browserify\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\node_modules\zlib-browserify\test\zlib.test.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\node_modules\zlib-browserify\zlib.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\node_modules\grunt-lib-contrib\test\lib_test.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\comments.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\compress.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\compress_mangle.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\compress_mangle_banner.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\compress_mangle_beautify.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\compress_mangle_except.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\compress_mangle_sourcemap" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\enclose.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\exportAll.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\multifile.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\multiple_sourcemaps1.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\multiple_sourcemaps1.map" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\multiple_sourcemaps2.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\multiple_sourcemaps2.map" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\sourcemap_prefix" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\sourcemapin" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\sourcemapin.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\sourcemapurl.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\expected\wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\src\comments.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\src\simple.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\src\simple2.coffee" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\src\simple2.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\fixtures\src\simple2.map" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-contrib-uglify\test\uglify_test.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-newer\.cache\less\development\timestamp" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\grunt-newer\node_modules\async\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-differ\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-differ\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-differ\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-union\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-union\node_modules\array-uniq\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-union\node_modules\array-uniq\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-union\node_modules\array-uniq\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-union\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\array-union\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\load-grunt-tasks\node_modules\multimatch\node_modules\minimatch\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\ansi-styles\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\has-ansi\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\has-ansi\node_modules\get-stdin\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\has-ansi\node_modules\get-stdin\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\has-ansi\node_modules\get-stdin\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\chalk\node_modules\supports-color\license" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\pretty-ms\node_modules\get-stdin\index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\pretty-ms\node_modules\get-stdin\package.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\node_modules\time-grunt\node_modules\pretty-ms\node_modules\get-stdin\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\webProject\forbes\npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-cssmin/node_modules/maxmin/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-cssmin/node_modules/maxmin/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/chalk/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/inherits/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/chalk/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/errno/node_modules/prr/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/errno/node_modules/prr/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/promise/node_modules/asap/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/promise/node_modules/asap/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/request/node_modules/caseless/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/request/node_modules/caseless/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/request/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/request/node_modules/qs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/source-map/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/less/node_modules/source-map/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/lodash/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-less/node_modules/lodash/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/time-grunt/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" afterPath="$PROJECT_DIR$/node_modules/time-grunt/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json" />
+    <list default="true" id="2f320080-69a2-419d-95dd-dece88b9e577" name="Default" comment="可以进行测试运行&#10;使用方法 命令行内：&#10;$ grunt server&#10;自动在默认浏览器中打开&#10;&#10;或者 http://localhost:9000/&#10;&#10;即可打开。暂时无法使用build发布部署项目">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="forbes.iws" />
@@ -265,8 +29,8 @@
       <file leaf-file-name="person.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/person.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.11164274" vertical-offset="155" max-vertical-offset="782">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.93772244" vertical-offset="0" max-vertical-offset="782">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -587,15 +351,22 @@
       <option name="project" value="LOCAL" />
       <updated>1426641154409</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="可以进行测试运行&#10;使用方法 命令行内：&#10;$ grunt server&#10;自动在默认浏览器中打开&#10;&#10;或者 http://localhost:9000/&#10;&#10;即可打开。暂时无法使用build发布部署项目">
+      <created>1426650361975</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1426650361975</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32020727" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3205394" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38692945" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37966806" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -604,13 +375,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32572615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4439834" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38692945" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -632,7 +402,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="yo webapp project&#10;遵循yo webapp开发项目文件格式，使用详情我后续补上" />
-    <option name="LAST_COMMIT_MESSAGE" value="yo webapp project&#10;遵循yo webapp开发项目文件格式，使用详情我后续补上" />
+    <MESSAGE value="可以进行测试运行&#10;使用方法 命令行内：&#10;$ grunt server&#10;自动在默认浏览器中打开&#10;&#10;或者 http://localhost:9000/&#10;&#10;即可打开。暂时无法使用build发布部署项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="可以进行测试运行&#10;使用方法 命令行内：&#10;$ grunt server&#10;自动在默认浏览器中打开&#10;&#10;或者 http://localhost:9000/&#10;&#10;即可打开。暂时无法使用build发布部署项目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -669,6 +440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.76" vertical-offset="75" max-vertical-offset="646">
           <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +498,7 @@
         <state vertical-scroll-proportion="-0.051457975" vertical-offset="30" max-vertical-offset="637109">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -827,8 +599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/person.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11164274" vertical-offset="155" max-vertical-offset="782">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.93772244" vertical-offset="0" max-vertical-offset="782">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,80 @@
+<ion-view view-title="活动详情" hide-footer="true">
+    <ion-content scrollbar-y="false">
+        <div class="activity_single_body">
+            <div class="activity_title">
+                {{activity.activityname}}
+            </div>
+            <div class="activity_tags">
+                <div class="tag pv">
+                    <i class="iconfont icon-iconfontchakan"></i> {{activity.pv}}
+                </div>
+                <div class="tag signcount">
+                    已报名{{activity.signcount}}
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="activity_content">
+                <div class="activity_item_logo">
+                    <img ng-src="{{activity.activityimage}}" />
+                </div>
+                <div class="activity_time">
+                    <div class="row">
+                        <div class="col col-10">
+                            <i class="iconfont icon-iconfontshijian"></i>
+                        </div>
+                        <div class="col">
+                            <span>时间：{{ activity.time | date : 'yyyy年MM月dd日 HH:mm:ss' }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity_loc">
+                    <div class="row">
+                        <div class="col col-10">
+                            <i class="iconfont icon-iconfontdizhi"></i>
+                        </div>
+                        <div class="col">
+                            <span>地址：{{activity.address}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity_tags" ng-show="activity.categoryname?true:false">
+                    <div class="tag categoryname" >
+                        {{activity.categoryname}}
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="activity_status">
+                    <div ng-class="{triangle:true,activity_status_over:activity.status != 0} ">
+                    </div>
+                    <p>
+                        {{activity.status | activityStatusTextFilter}}
+                    </p>
+                </div>
+            </div>
+            <div class="apply_form" id="aply_f" ng-show='apply_form.show'>
+                <div class="apply_titel">
+                    在线报名
+                </div>
+                <div class="list" >
+                    <label class="item item-input" ng-repeat="signfield in activity.signfield">
+                    <!--<label class="item item-input">-->
+                        <input type="text" placeholder="请输入{{signfield.key}}" ng-model='apply_data[signfield.value]'>
+                    </label>
+                    <!--<label class="item item-input">-->
+                        <!--<input type="text" placeholder="请输入手机号码" ng-model='apply_data.Phone'>-->
+                    <!--</label>-->
+                </div>
+                <div class="apply_sublime" ng-click="online_apply()">
+                    提 交
+                </div>
+            </div>
+            <div class="activity_detail" ng-bind-html="SkipValidation(activity.activitycontent)">
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<ion-footer-bar class="activity_apply">
+    <div class="button"  ng-click='toggle_apply(aply_f)'>
+        <div class="text">我要报名</div>
+    </div>
+</ion-footer-bar>

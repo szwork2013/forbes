@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.wd_add_body{
+  .default-page-bg-init;
+
+  background-color: white;
+
+  .operators{
+    width: 90%;
+    margin: 15px auto;
+    .operator{
+      border-radius: 5px;
+      padding: 10px 30px;
+      width: auto;
+      float: left;
+      background-color: red;
+      color: white;
+    }
+    .cancel{
+      background-color: rgba(25, 95, 185, 0.75);
+    }
+    .publish{
+      float: right;
+      background-color: @theme-color;
+    }
+  }
+
+  .wd_add_group{
+    width: 96%;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 20px;
+    .test_border;
+    .wd_title{
+      width: 100%;
+      padding: 0 10px;
+      .test_border;
+    }
+    .driver{
+      width: 100%;
+      border-bottom: 1px solid @default-line-color;
+    }
+    .wd_detail{
+      padding: 0 10px;
+      margin-top: 10px;
+      height: 40vh;
+      .test_border;
+      textarea{
+        color: @default-line-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<ion-view view-title="添加问题" hide-footer="true">
+    <ion-content>
+        <div class="wd_add_body">
+            <div class="operators">
+                <a class="operator cancel" ng-click="cancelAdd()">
+                    取消
+                </a>
+                <a class="operator publish" ng-click="addWenda()">
+                    发布
+                </a>
+            </div>
+            <div class="wd_add_group">
+                <div class="wd_title">
+                    <input type="text" placeholder="问答标题" ng-model="wenda.titles"/>
+                </div>
+                <div class="driver">
+                </div>
+                <div class="wd_detail" contenteditable="true">
+                    <textarea placeholder="问答详情" rows="10" ng-model="wenda.content"> </textarea>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
