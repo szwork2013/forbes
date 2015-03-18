@@ -1,7 +1,7 @@
 <ion-view view-title="个人中心" hide-footer="false">
     <ion-content>
         <div class="grzx_body">
-            <div class="person_main" ng-show="islogin.islogin">
+            <div class="person_main" ng-show="personinf">
                 <div class="person_head">
                     <div class="head_img">
                         <img ng-src="{{personinf.headimg}}" />
@@ -24,8 +24,8 @@
                     </a>
                 </div>
             </div>
-            <div class="login_box" ng-hide="islogin.islogin">
-                <a href="#/login" class="login_btn" >登录{{islogin.islogin}}</a>
+            <div class="login_box" ng-hide="personinf">
+                <a href="#/login" class="login_btn" >登录</a>
             </div>
             <div class="person_rels">
                 <div class="list">
@@ -83,7 +83,7 @@
                             我关注的人
                         </div>
                         <div class="item_more">
-                            111<i class="iconfont icon-you"></i>
+                            111 <i class="iconfont icon-you"></i>
                         </div>
                     </a>
                     <a class="item" ng-click="redir('licaishi_list','myfans')">

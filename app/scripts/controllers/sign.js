@@ -1,5 +1,5 @@
 angular.module('fbs.controllers')
-.controller('signCtrl',function($scope,DataAPI,Tools) {
+.controller('signCtrl',function($scope,DataAPI,Tools,$cookieStore) {
         $scope.signInData = {};
         $scope.signInData.action = "login";
         $scope.signInData.userid = "forbesuser1";
@@ -9,8 +9,10 @@ angular.module('fbs.controllers')
                 console.log(resp);
                 if(resp.issuccess){
                     Tools.pageReturn();
-                    alert("登录成功");
-                    alert(resp.userid);
+                //  setCookie
+                    var loginUser = {};
+                    loginUser.userId = resp.userid;
+                    $cookieStore.put('loginUser',loginUser);
                 }else{
                     console.log(resp.message);
                 }
