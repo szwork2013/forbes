@@ -27,7 +27,9 @@ angular.module('fbs.services')
             for(var i in subparams){
                 temp[i] = subparams[i];
             }
-            return resource.get(temp);
+            var resp = resource.get(temp);
+            console.log(resp);
+            return resp;
         }
     };
 

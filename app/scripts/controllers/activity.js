@@ -39,10 +39,7 @@ angular.module('fbs.controllers')
         //$scope.online_apply = DataAPI.get($scope.apply_data);
         //$scope.apply_data = {};
         $scope.online_apply = function(){
-            DataAPI.get($scope.apply_data)
-                .$promise.then(function(resp) {
-                        console.log(resp);
-                });
+            DataAPI.get($scope.apply_data);
         }
     });
 
