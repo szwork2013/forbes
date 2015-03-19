@@ -5,9 +5,23 @@
 @import "dev/theme";
 .fx_body{
   .default-page-bg-init;
+
   .img_slider{
+    position: relative;
     width: 100%;
     height: 20vh;
+    .close_area{
+      position: absolute;
+      top:0;
+      right: 0;
+      background-color:@default-line-color;
+      @box_a:25px;
+      width: @box_a;
+      height: @box_a;
+      line-height: @box_a;
+      text-align: center;
+      color: white;
+    }
     .img_slider_box{
       height: 100%;
       .box{
@@ -27,6 +41,7 @@
       }
     }
   }
+
 
   .list{
     .item {

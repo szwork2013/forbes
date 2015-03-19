@@ -149,14 +149,6 @@ app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$reso
                 templateUrl: 'pages/fx/lcs_history.html'
             }
         }
-    }).state('xx',{
-        url: '/xx',
-        views: {
-            'mainContent': {
-                templateUrl: 'pages/xx/xx.html',
-                controller:'xiaoxiCtrl'
-            }
-        }
     }).state('grzx',{
         url: '/grzx',
         views: {
@@ -181,6 +173,21 @@ app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$reso
                 controller:'personCtrl'
             }
         }
+    }).state('xx',{
+      url: '/xx',
+      views: {
+        'mainContent': {
+          templateUrl: 'pages/xx/xx.html',
+          controller:'xiaoxiCtrl'
+        }
+      }
+    }).state('xx_list',{
+      url: '/xx_list/:operat',
+      views: {
+        'mainContent': {
+          templateUrl: 'pages/xx/xx_list.html'
+        }
+      }
     }).state('wjlb',{
         url: '/wjlb/:operat',
         views: {
