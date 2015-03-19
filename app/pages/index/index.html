@@ -56,9 +56,9 @@
             <div class="img_slider">
                 <ion-slide-box class="img_slider_box">
                     <ion-slide ng-repeat="sliderImg in sliderImgs.list">
-                        <div class="box" >
+                        <a class="box" ng-href="{{sliderImg.link}}">
                             <img ng-src="{{sliderImg.imgurl}}" />
-                        </div>
+                        </a>
                     </ion-slide>
                 </ion-slide-box>
             </div>
