@@ -1,1 +1,0 @@
-angular.module("fbs.directives").directive("hideFooter",function($rootScope){return{restrict:"A",link:function(scope,element,attributes){scope.$watch(attributes.hideFooter,function(value){console.log("hidefooter = "+value),$rootScope.hideFooter=value})}}});
