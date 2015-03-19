@@ -1,0 +1,63 @@
+<ion-view view-title="问答详情" hide-footer="true">
+    <ion-content>
+        <div class="wd_single_body">
+            <div class="wt">
+                <div class="person_head">
+                    <div class="head_img">
+                        <img ng-src="{{wenda.ask.headimg}}" />
+                    </div>
+                    <div class="person_identity">
+                        <div class="tag signcount">
+                            理财师
+                        </div>
+                    </div>
+                </div>
+                <div class="wd_context item-text-wrap">
+                    <div class="wd_title">
+                        {{wenda.ask.title}}
+                    </div>
+                    <div class="wd_rels">
+                        <div class="tag pv">
+                            <i class="iconfont icon-iconfontchakan"></i> {{wenda.ask.pv}}
+                        </div>
+                        <div class="tag zhuanfa">
+                            <i class="iconfont icon-iconfonthuifu"></i> {{wenda.ask.sharecount}}
+                        </div>
+                        <div class="wd_date">
+                            {{wenda.ask.time | date : 'yyyy-MM-dd'}}
+                        </div>
+                    </div>
+                    <div class="wd_details">
+                        {{wenda.ask.content}}
+                    </div>
+                </div>
+            </div>
+            <div class="list hd_list">
+                <div class="item" ng-repeat="wd_reply in wenda.reply.list">
+                    <div class="person_head">
+                        <div class="head_img">
+                            <img ng-src="{{wd_reply.headimg}}" />
+                        </div>
+                        <div class="person_identity" ng-show="wd_reply.ismaster">
+                            <div class="tag signcount">
+                                理财师
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wd_context item-text-wrap">
+                        <div class="wd_title">
+                            {{wd_reply.truename}}
+                        </div>
+                        <div class="wd_details">
+                            {{wd_reply.content}}
+                        </div>
+                        <div class="wd_time">
+                            {{wd_reply.time | date : 'yyyy-MM-dd'}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

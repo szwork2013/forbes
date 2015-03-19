@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.login_body{
+  width: 100%;
+  padding-top: 10vh;
+  .test_border;
+  @ioc_w:5vh;
+  .iconfont{
+    color: @theme-color;
+    font-size: @ioc_w;
+    display: inline-block;
+  }
+  .logo_img{
+    .test_border;
+    width: 60%;
+    margin: 0 auto;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .login_form{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    .test_border;
+    &_input{
+      position:relative;
+      border-bottom: 1px solid @theme-color;
+      padding: 0px 10px;
+      margin-top: 20px;
+      input{
+        display: inline-block;
+        width: 60%;
+        height: @ioc_w;
+      }
+      .reciveYzm{
+        position: absolute;
+        background-color: @theme-color;
+        width: 25%;
+        height: @ioc_w * 1.2;
+        line-height: @ioc_w * 1.2;
+        right: 0;  bottom: 0;
+        text-align: center;
+        border-radius:5px 5px 0 0;
+        color: white;
+      }
+    }
+    &_btn{
+      margin-top: 20px;
+      button{
+        background-color: @theme-color;
+        border-radius: @ioc_w;
+        color: white;
+      }
+      .regist_btn{
+        background-color: #35ac9d;
+      }
+    }
+
+  }
+}
+
+

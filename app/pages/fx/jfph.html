@@ -1,0 +1,79 @@
+<ion-view view-title="积分排行" hide-footer="true">
+    <ion-content>
+            <div class="jfph_body">
+                <div class="qiansan row">
+                    <div class="col col-33">
+                        <div class="person fisrt">
+                            <div class="person_head">
+                                <div class="xuhao">1</div>
+                                <div class="head_img">
+                                    <img ng-src="{{jfphList.list[0].headimg}}" alt=""/>
+                                </div>
+                                <div class="iconf">
+                                    <i class="iconfont icon-iconfontlicaishipingxuan"></i>
+                                </div>
+                            </div>
+
+                            <div class="person_name">{{jfphList.list[0].truename}}</div>
+                            <div class="person_jifen">{{jfphList.list[0].totalscore}}</div>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="person second">
+                            <div class="person_head">
+                                <div class="xuhao">2</div>
+                                <div class="head_img">
+                                    <img ng-src="{{jfphList.list[1].headimg}}" alt=""/>
+                                </div>
+                                <div class="iconf">
+                                    <i class="iconfont icon-iconfontlicaishipingxuan"></i>
+                                </div>
+                            </div>
+                            <div class="person_name">{{jfphList.list[1].truename}}</div>
+                            <div class="person_jifen">{{jfphList.list[1].totalscore}}</div>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="person third">
+                            <div class="person_head">
+                                <div class="xuhao">3</div>
+                                <div class="head_img">
+                                    <img ng-src="{{jfphList.list[2].headimg}}" alt=""/>
+                                </div>
+                                <div class="iconf">
+                                    <i class="iconfont icon-iconfontlicaishipingxuan"></i>
+                                </div>
+                            </div>
+
+                            <div class="person_name">{{jfphList.list[2].truename}}</div>
+                            <div class="person_jifen">{{jfphList.list[2].totalscore}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qiyu ">
+                    <div class="list">
+                        <div class="item row" ng-class="{optc:($index%2 != 0) }" ng-repeat="pson in jfphList.list.slice(3)">
+                            <div class="col col-20 xuhao">
+                                {{$index+4}}
+                            </div>
+                            <div class="col col-20 touxiang">
+                                <div class="person_head">
+                                    <div class="head_img">
+                                        <img ng-src="{{pson.headimg}}" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-40">
+                                {{pson.truename}}
+                            </div>
+                            <div class="col col-20 jifen">
+                                {{pson.totalscore}}
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </ion-content>
+</ion-view>

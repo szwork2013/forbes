@@ -1,0 +1,21 @@
+<ion-view view-title="问卷列表" hide-footer="true">
+    <ion-content>
+        <div class="wjlb_body">
+            <div class="list">
+                <a class="item" ng-repeat="wenjuan in wenjuanList.list" ng-href="{{wenjuan.link}}">
+                    <!--<div class="logo wj">-->
+                        <!--<i class="iconfont icon-iconfontdiaocha"></i>-->
+                    <!--</div>-->
+                    <div class="text">
+                        <div class="mainText">
+                            {{wenjuan.title}}
+                        </div>
+                        <div class="subText">
+                            {{wenjuan.content}}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

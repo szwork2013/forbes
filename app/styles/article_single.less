@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.article_single_body{
+  .default-page-bg-init;
+  padding: 5px;
+  width: 100%;
+  float: left;
+  .article_context{
+    width: 96%;
+    margin:0 auto;
+    .article_title{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .article_rels{
+      margin-top: 10px;
+      .article_date{
+        .default-small-text;
+        margin-left: 10px;
+      }
+    }
+    .article_details{
+      width: 100%;
+      float: left;
+      margin: 15px 0;
+      .default-small-text;
+    }
+  }
+}

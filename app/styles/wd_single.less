@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+
+.wd_single_body{
+  .default-page-bg-init;
+  .wt{
+    padding: 10px;
+    .person_head{
+      width: 20%;
+      float: left;
+      .test_border;
+      .head_img{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        .test_border;
+        img{
+          position: absolute;
+          max-width: 100%;
+          border-radius: 50%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .head_img:before{
+        content: "";
+        display: block;
+        padding-top: 100%; 	/* initial ratio of 1:1*/
+      }
+      .person_identity{
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+//        margin-left: 10%;
+      }
+    }
+    .wd_context{
+      padding: 5px 0;
+      float: left;
+      width: 80%;
+      .test_border;
+      .wd_title{
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .wd_rels{
+        margin-top: 5px;
+        .wd_date{
+          margin-left: 10px;
+          .default-small-text;
+          color: rgba(197, 190, 201, 0.75);
+        }
+      }
+      .wd_details{
+        width: 100%;
+        float: left;
+        margin: 5px 0;
+        .default-small-text;
+      }
+      .wd_time{
+        float: right;
+        .default-small-text;
+      }
+    }
+  }
+
+  .hd_list{
+    clear: both;
+    .test_border;
+    padding: 0;
+    .item{
+      padding: 10px;
+      background-color: transparent;
+      .person_head{
+        width: 20%;
+        float: left;
+        .test_border;
+        .head_img{
+          position: relative;
+          width: 80%;
+          margin: 0 auto;
+          .test_border;
+          img{
+            position: absolute;
+            max-width: 100%;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .head_img:before{
+          content: "";
+          display: block;
+          padding-top: 100%; 	/* initial ratio of 1:1*/
+        }
+        .person_identity{
+          float: left;
+          width: 80%;
+          margin-top: 10px;
+          margin-left: 10%;
+        }
+      }
+      .wd_context{
+        padding: 5px 0;
+        float: left;
+        width: 80%;
+        .test_border;
+        .wd_title{
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .wd_rels{
+          margin-top: 5px;
+
+          .wd_date{
+            margin-left: 10px;
+            .default-small-text;
+            color: rgba(197, 190, 201, 0.75);
+          }
+        }
+        .wd_details{
+          width: 100%;
+          float: left;
+          margin: 5px 0;
+          .default-small-text;
+        }
+        .wd_time{
+          float: right;
+          .default-small-text;
+        }
+      }
+    }
+    .item:last-child{
+      margin-bottom:0;
+    }
+  }
+}
