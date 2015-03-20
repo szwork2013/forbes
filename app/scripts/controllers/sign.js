@@ -37,13 +37,7 @@ angular.module('fbs.controllers')
                 });
         };
         $scope.reqYzw = function(){
-            DataAPI.get({
-                action:'getsmsvercode',
-                phone:$scope.registData.phone
-            }).$promise.then(function(resp) {
-                    console.log(resp);
-            });
-
+            ;
         };
 })
 

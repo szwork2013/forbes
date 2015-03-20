@@ -37,14 +37,12 @@
     <link rel="stylesheet" href="styles/wj_list.css">
     <link rel="stylesheet" href="styles/xx.css">
     <!-- endbuild -->
-
     <!-- build:js(.) scripts/vendor.js -->
     <!--<script src="../bower_components/ionic/release/js/ionic.bundle.js"></script>-->
     <script src="bower_components/ionic/js/ionic.bundle.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <!-- endbuild -->
-
     <!-- build:js scripts/main.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/index.js"></script>
@@ -63,14 +61,13 @@
     <script src="scripts/filters/msgType.js"></script>
     <script src="scripts/filters/lcsAttention.js"></script>
     <script src="scripts/directive/operateFooter.js"></script>
-    <script src="scripts/directive/mycurrent.js"></script>
     <script src="scripts/directive/searchByKeyword.js"></script>
     <script src="scripts/directive/searchByCategory.js"></script>
+    <script src="scripts/directive/addMoreList.js"></script>
+    <script src="scripts/directive/sentYzm.js"></script>
     <!-- endbuild -->
 </head>
 <body ng-controller="appCtrl">
-    <!--Date format: <input ng-model="format"> <hr/>-->
-    <!--Current time is: <span my-current-time="format"></span>-->
     <ion-nav-view name="mainContent">
     </ion-nav-view>
     <div class="rollback" ng-click="rollback()" ng-hide="!hideFooter">
@@ -98,8 +95,9 @@
             </a>
         </div>
     </ion-footer-bar>
-
-
+    <div class="operate_msg" ng>
+      操作成功
+    </div>
 </body>
 </html>
 

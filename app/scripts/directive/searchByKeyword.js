@@ -7,7 +7,7 @@ angular.module('fbs.directives')
         element.bind('click', function() {
             scope.$apply(function() {
                 scope.reqOptions.keyword = scope.keyword;
-                scope.targetDatas.licaishiList = DataAPI.get(scope.reqOptions);
+                scope.targetDatas = DataAPI.get(scope.reqOptions);
             });
         });
     }

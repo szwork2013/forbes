@@ -1,30 +1,27 @@
 <ion-view view-title="理财师列表" hide-footer="true" >
     <div class="licaishi_body">
         <div class="searchHeader">
-            <div class="row">
-                <div class="col col-20 category_list" style="position:relative" ng-click="categoryAera = !categoryAera">
-                    <i class="iconfont icon-iconfontliebiao"></i>
-                    <div ng-show="categoryAera" style="position: absolute;z-index: 999;width: 100px;color:blueviolet;background-color: rgba(220, 207, 24, 0.98)">
-                        <div class="list">
-                            <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.tagid' req-options = 'lcsListReqOptions' target-datas = 'pageDatas'>
-                               {{category.tagname}}
-                            </a>
-                        </div>
+            <div class="categorySearch" ng-click="categoryAera = !categoryAera">
+                <i class="iconfont icon-iconfontliebiao"></i>
+                <div  class="category_list" ng-show="categoryAera">
+                    <div class="list">
+                        <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.tagid' req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'>
+                          {{category.tagname}}
+                        </a>
                     </div>
                 </div>
-                <div class="col searchGroup">
-                    <div class="row">
-                        <div class="col col-75 search_inp">
-                            <input type="text" ng-model="keyword">
-                        </div>
-                        <div class="col col-25 search_btn" search-by-keyword  keyword ='keyword' req-options = 'lcsListReqOptions' target-datas = 'pageDatas'>
-                            <i class="iconfont icon-iconfontsousuo" ></i>
-                        </div>
+            </div>
+            <div class="searchGroup">
+                <div class="wrap">
+                    <div class="search_inp">
+                      <input type="text" ng-model="keyword">
+                    </div>
+                    <div class="search_btn" search-by-keyword  keyword ='keyword' req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'>
+                      <i class="iconfont icon-iconfontsousuo" ></i>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="list licaishi_list">
             <a class="item" ng-repeat="licaishi in pageDatas.licaishiList.list" ng-click="details(licaishi.userid)">
                 <div class="person_head">
@@ -60,9 +57,8 @@
                 </div>
             </a>
         </div>
-
         <div class="load_box">
-          <div class="loadmore">
+          <div class="loadmore" add-more-list req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'>
             加载更多
           </div>
         </div>

@@ -16,7 +16,8 @@
                 <div class="login_form_input">
                     <i class="iconfont icon-iconfontyanzhengma"></i>
                     <input type="text" placeholder="验证码" ng-model="registData.vercode">
-                    <div class="reciveYzm" ng-click="reqYzw()">
+                    <!--<div class="reciveYzm" ng-click="reqYzw()">-->
+                    <div class="reciveYzm" sent-yzm ng-disabled="div_disable" ng-class="{div_forbid : div_disable}" div-disable="div_disable" phone="registData.phone">
                         验证码
                     </div>
                 </div>
