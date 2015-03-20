@@ -398,7 +398,6 @@ module.exports = function (grunt) {
       'mocha'
     ]);
   });
-
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
@@ -413,7 +412,6 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
-
   grunt.registerTask('default', [
     'newer:jshint',
     'test',

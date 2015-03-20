@@ -3,6 +3,7 @@
 @import "dev/test";
 @import "dev/util";
 @import "dev/theme";
+@import "commen";
 .licaishi_body{
   .default-page-bg-init;
   .searchHeader{
@@ -47,6 +48,8 @@
     margin: 0 10px;
     padding: 0;
     .item{
+      height: 130px;
+      position: relative;
       margin-bottom:10px;
       padding: 5px;
       border-radius: 5px;
@@ -93,9 +96,9 @@
         }
       }
       .licaishi_rels{
-        clear:both;
-        float: left;
-        margin-top: 5px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
       }
       .licaishi_tags{
         clear:both;
@@ -108,8 +111,8 @@
         bottom: 0;
         right: 0;
         width: 100px;
-        height: 45px;
-        line-height: 45px;
+        height: 40px;
+        line-height: 40px;
         border-radius: 5px 0 0 0;
         text-align: center;
         background-color: rgba(75, 165, 255, 0.75);
@@ -118,6 +121,16 @@
     }
     .item:last-child{
       margin-bottom:0;
+    }
+  }
+  .load_box{
+    width: 100%;
+    .test_border;
+    margin-top: 10px;
+    .loadmore{
+      width: 60%;
+      margin:0 auto;
+      .div_btn();
     }
   }
 }

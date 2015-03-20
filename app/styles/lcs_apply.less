@@ -3,16 +3,74 @@
 @import "dev/test";
 @import "dev/util";
 @import "dev/theme";
-
 .lcs_apply_body{
   .default-page-bg-init;
+
   .apply_status{
     width: 96%;
     margin: 0 auto;
     margin-top: 10px;
+    overflow: hidden;
     .test_border;
+    .area{
+      float: left;
+    }
+    .box{
+      background-color: @default-line-color;
+      width: 16%;
+      padding-bottom: 16%;
+      height: 0;
+      border-radius: 50%;
+      position: relative;
+      .word{
+        color: white;
+        width: 80%;
+        position: absolute;
+        top:10%;bottom:10%;
+        left:0;right: 0;
+        margin:auto;
+        height:80%;
+        text-align: center;
+        display: table;
+        span{
+          display:table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+    .line_box{
+      width: 12%;
+      padding-bottom: 16%;
+      position: relative;
+      .line{
+        position: absolute;
+        background-color:@default-line-color;
+        height: 2px;
+        width: 100%;
+        top:0;bottom: 0;
+        margin: auto 0;
+      }
+      .line:after{
+        content: "";
+        position: absolute;
+        width: 6px;height: 6px;
+        border-radius: 50%;
+        background-color:@default-line-color;
+        top: 0;bottom: 0;
+        left: 0;right: 0;
+        margin: auto;
+      }
+
+      .activity,.activity.line:after{
+        background-color: #29ce9f;
+      }
+    }
+    .activity{
+      background-color: #29ce9f;
+    }
   }
   .apply_area{
+//    clear: both;
     width: 80%;
     margin: 0 auto;
     margin-top: 10px;
