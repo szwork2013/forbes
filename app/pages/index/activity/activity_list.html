@@ -2,26 +2,30 @@
     <ion-content>
         <div class="activity_body">
             <div class="searchHeader">
-                <div class="row">
-                    <div class="col col-20 category_list">
-                        <div class="row">
-                            <i class="iconfont icon-iconfontliebiao"></i>
-                        </div>
-                    </div>
-                    <div class="col searchGroup">
-                        <div class="row">
-                            <div class="col col-75 search_inp">
-                                <input type="text">
-                            </div>
-                            <div class="col col-25 search_btn">
-                                <i class="iconfont icon-iconfontsousuo" ></i>
-                            </div>
+                <div class="categorySearch" ng-click="categoryAera = !categoryAera">
+                    <i class="iconfont icon-iconfontliebiao"></i>
+                    <div  class="category_list" ng-show="categoryAera">
+                        <div class="list">
+                          <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.categoryid' req-options = 'activityListReqOptions' target-datas = 'pageDatas.activityList'>
+                            {{category.categoryname}}
+                          </a>
                         </div>
                     </div>
                 </div>
+                <div class="searchGroup">
+                    <div class="wrap">
+                      <div class="search_inp">
+                        <input type="text" ng-model="keyword">
+                      </div>
+                      <div class="search_btn" search-by-keyword  keyword ='keyword' req-options = 'activityListReqOptions' target-datas = 'pageDatas.activityList'>
+                        <i class="iconfont icon-iconfontsousuo" ></i>
+                      </div>
+                    </div>
+                </div>
             </div>
+
             <div class="list activity_list">
-                <a class="item activity" ng-repeat="activity in activities.list " ng-click="details(activity.activityid)">
+                <a class="item activity" ng-repeat="activity in pageDatas.activityList.list " ng-click="details(activity.activityid)">
                     <div class="activity_logo">
                         <img ng-src="{{activity.activityimage}}" />
                     </div>

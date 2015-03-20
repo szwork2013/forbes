@@ -1,5 +1,5 @@
 angular.module('fbs.controllers')
-.controller('activityListCtrl',function($scope,$stateParams,$state,DataAPI) {
+.controller('activityListCtrl',function($scope,$stateParams,Tools,DataAPI) {
         var operat = $stateParams.operat;
         var actionsUrl;
         if(operat == 'my'){
@@ -8,13 +8,24 @@ angular.module('fbs.controllers')
             actionsUrl = 'getactivitylist';
         }
         $scope.details = function (activityId) {
-            $state.go('activity_single',{activityId:activityId});
+            Tools.pageSkip('activity_single',{activityId:activityId});
         };
-        $scope.activities = DataAPI.get({
-                action:actionsUrl,
-                pageindex:1,
-                pagesize:10
-        });
+        $scope.activityListReqOptions = {
+          action:actionsUrl,
+          pageindex:1,
+          pagesize:10,
+          keyword:''
+        };
+        $scope.categoryAera = false;
+        $scope.ctgListReqOptions = {
+          action:'getactivitycategorylist',
+          pageindex:1,
+          pagesize:10
+        };
+        $scope.pageDatas = {
+          activityList:DataAPI.get($scope.activityListReqOptions),
+          categoryList:DataAPI.get($scope.ctgListReqOptions)
+        };
 
 })
 .controller('activitySingleCtrl', function($scope,$stateParams,$location,$ionicScrollDelegate,$sce,DataAPI) {

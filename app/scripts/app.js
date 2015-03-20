@@ -216,7 +216,7 @@ app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$reso
         }
     });
 });
-app.controller('appCtrl',function($scope,Tools,$rootScope){
+app.controller('appCtrl',function($scope,Tools,$rootScope,$interval){
     $scope.format = 'M/d/yy h:mm:ss a';
     $scope.tab = 1;
     $scope.selectTab = function(setTab){
@@ -229,9 +229,15 @@ app.controller('appCtrl',function($scope,Tools,$rootScope){
         Tools.pageReturn();
     };
     $rootScope.hidefooter = false;
-
     $rootScope.msg_show = false;
     $rootScope.msg_cont = "操作成功";
+    //$interval(function() {
+    //  $rootScope.msg_show = !$rootScope.msg_show;
+    //  console.log("exc...");
+    //},10000,5).then(function(){
+    //  console.log("finished");
+    //  $rootScope.msg_show = !$rootScope.msg_show;
+    //});
 });
 angular.module('fbs.controllers', []);
 angular.module('fbs.services', []);

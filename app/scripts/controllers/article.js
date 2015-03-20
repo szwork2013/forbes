@@ -1,14 +1,24 @@
 angular.module('fbs.controllers')
-.controller('articleListCtrl',function($scope,$state,DataAPI) {
+.controller('articleListCtrl',function($scope,Tools,DataAPI) {
     $scope.details = function (newsid) {
-        console.log(newsid);
-        $state.go('article_single',{newsid : newsid});
+        Tools.pageSkip('article_single',{newsid : newsid});
     };
-    $scope.articles = DataAPI.get({
-            action:'getnewslist',
-            pageindex:1,
-            pagesize:10
-    });
+    $scope.articleListReqOptions = {
+      action:'getnewslist',
+      pageindex:1,
+      pagesize:10,
+      keyword:''
+    };
+    $scope.categoryAera = false;
+    $scope.ctgListReqOptions = {
+      action:'getnewscategorylist',
+      pageindex:1,
+      pagesize:10
+    };
+    $scope.pageDatas = {
+      articleList:DataAPI.get($scope.articleListReqOptions),
+      categoryList:DataAPI.get($scope.ctgListReqOptions)
+    };
 })
 .controller('articleSingleCtrl', function($scope,$stateParams,DataAPI,$sce) {
     var articleId = $stateParams.newsid;

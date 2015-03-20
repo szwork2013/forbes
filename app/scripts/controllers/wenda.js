@@ -18,7 +18,7 @@ angular.module('fbs.controllers')
         id:wendaId
     });
 })
-.controller('wendaAddCtrl', function($scope,$stateParams,DataAPI,Tools) {
+.controller('wendaAddCtrl', function($scope,$stateParams,$rootScope,DataAPI,Tools) {
         var touserid;
         if($stateParams.touserid != 'none'){
             touserid = $stateParams.touserid
@@ -36,6 +36,7 @@ angular.module('fbs.controllers')
                     Tools.pageSkip('wd_list', {operat:'all'});
                 }else if(resp.errcode == 1){
                     console.log("尚未登录");
+                    Tools.msgShow("请登录");
                     Tools.pageSkip('login',null);
                 }
             });
