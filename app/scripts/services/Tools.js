@@ -15,7 +15,9 @@ angular.module('fbs.services')
             if($ionicHistory.backView()){
                 $state.go(retObj.stateName,retObj.stateParams,options);
             }else{
-                $ionicHistory.goBack();
+                // $ionicHistory.goBack();
+                //页面刷新后返回按钮无效  统一回首页
+                $state.go("index");
             }
         }
         return {
