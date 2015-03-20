@@ -229,6 +229,9 @@ app.controller('appCtrl',function($scope,Tools,$rootScope){
         Tools.pageReturn();
     };
     $rootScope.hidefooter = false;
+
+    $rootScope.msg_show = false;
+    $rootScope.msg_cont = "操作成功";
 });
 angular.module('fbs.controllers', []);
 angular.module('fbs.services', []);
