@@ -79,24 +79,32 @@
                                 <div class="news_time">
                                     {{msg.time | date : 'yyyy年MM月dd日 HH:mm' }}
                                 </div>
-                                <div class="news_context item-text-wrap news_acticle" ng-show="msg.type === 0">
+                                <div class="news_context news_acticle" ng-if="msg.type == 0">
                                     <div class="news_title">{{msg.newstitle}}</div>
                                 </div>
-                                <div class="news_context item-text-wrap news_activity" ng-show="msg.type === 1">
+                                <div class="news_context item-text-wrap news_activity" ng-if="msg.type == 1">
                                     <div class="news_title">{{msg.activityname}}</div>
                                     <div class="news_cont">时间:{{msg.activitytime | date : 'yyyy年MM月dd日 HH:mm:ss'}}</div>
                                     <div class="news_cont">地点:{{msg.activityaddress}}</div>
                                 </div>
-                                <div class="news_context item-text-wrap news_wd" ng-show="msg.type === 2">
+                                <div class="news_context news_wd" ng-if="msg.type == 2">
                                     <div class="news_title">{{msg.asktitle}}</div>
                                 </div>
-                                <div class="news_context item-text-wrap news_wd_rpl" ng-show="msg.type === 3">
+                                <div class="news_context news_wd_rpl" ng-if="msg.type == 3">
                                     <div class="news_title">{{msg.asktitle}}</div>
                                     <div class="news_cont">{{msg.askcontent}}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="loading_area" ng-show="loading_show">
+                  <img src="images/loading.gif" alt=""/>
+                </div>
+                <div class="load_box" ng-show="msgList.list != undefined && !isOver && !loading_show">
+                  <div class="loadmore" add-more-list req-options = 'msgListReqOptions' target-datas = 'msgList'  is-over="isOver" loading-show="loading_show">
+                    加载更多
+                  </div>
                 </div>
             </div>
         </div>

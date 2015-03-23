@@ -16,7 +16,7 @@
                     <a class="operator zixun" ng-click="zixun(licaishi.userid)">
                         <i class="iconfont icon-iconfontchakan"></i> 咨询
                     </a>
-                    <div class="operator guanzhu">
+                    <div class="operator guanzhu" ng-click="atteLcs(licaishi)">
                         <i class="iconfont icon-iconfontchakan"></i> 关注
                     </div>
                 </div>
@@ -25,14 +25,13 @@
         <div class="licaishi_details">
             <div class="details_item row">
                 <div class="details_title col col-20">
-                    企业
+                  企业
                 </div>
                 <div class="details_content col col-80">
-                    {{licaishi.company}}
+                  企业{{licaishi.company}}
                 </div>
             </div>
             <div class="details_item row">
-
                 <div class="details_title col col-20">
                     城市
                 </div>

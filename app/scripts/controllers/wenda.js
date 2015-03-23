@@ -5,11 +5,17 @@ angular.module('fbs.controllers')
         $scope.details = function (wendaId) {
             $state.go('wd_single',{wendaId : wendaId});
         };
-        $scope.wendas = DataAPI.get({
-                action:'getasklist',
-                pageindex:1,
-                pagesize:10
-        });
+        $scope.loading_show = true;
+
+        $scope.wdListReqOptions = {
+              action:'getasklist',
+              pageindex:1,
+              pagesize:10
+            };
+        DataAPI.get($scope.wdListReqOptions).$promise.then(function(req){
+          $scope.wendas = req;
+          $scope.loading_show = false;
+        });;
 })
 .controller('wendaSingleCtrl', function($scope,$stateParams,DataAPI) {
     var wendaId = $stateParams.wendaId;
@@ -18,7 +24,7 @@ angular.module('fbs.controllers')
         id:wendaId
     });
 })
-.controller('wendaAddCtrl', function($scope,$stateParams,DataAPI,Tools) {
+.controller('wendaAddCtrl', function($scope,$stateParams,$rootScope,DataAPI,Tools) {
         var touserid;
         if($stateParams.touserid != 'none'){
             touserid = $stateParams.touserid
@@ -36,6 +42,7 @@ angular.module('fbs.controllers')
                     Tools.pageSkip('wd_list', {operat:'all'});
                 }else if(resp.errcode == 1){
                     console.log("尚未登录");
+                    Tools.msgShow("请登录");
                     Tools.pageSkip('login',null);
                 }
             });
