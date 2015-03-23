@@ -146,7 +146,8 @@ app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$reso
         url: '/lcs_history',
         views: {
             'mainContent': {
-                templateUrl: 'pages/fx/lcs_history.html'
+                templateUrl: 'pages/fx/lcs_history.html',
+                controller:'licaishiHistoryCtrl'
             }
         }
     }).state('grzx',{
