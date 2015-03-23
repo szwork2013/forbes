@@ -79,18 +79,18 @@
                                 <div class="news_time">
                                     {{msg.time | date : 'yyyy年MM月dd日 HH:mm' }}
                                 </div>
-                                <div class="news_context news_acticle" ng-if="msg.type == 0">
+                                <div class="news_context news_acticle" ng-if="msg.type == 0" ng-click="news_redirect(msg.id,msg.type)">
                                     <div class="news_title">{{msg.newstitle}}</div>
                                 </div>
-                                <div class="news_context item-text-wrap news_activity" ng-if="msg.type == 1">
+                                <div class="news_context item-text-wrap news_activity" ng-if="msg.type == 1"  ng-click="news_redirect(msg.id,msg.type)">
                                     <div class="news_title">{{msg.activityname}}</div>
                                     <div class="news_cont">时间:{{msg.activitytime | date : 'yyyy年MM月dd日 HH:mm:ss'}}</div>
                                     <div class="news_cont">地点:{{msg.activityaddress}}</div>
                                 </div>
-                                <div class="news_context news_wd" ng-if="msg.type == 2">
+                                <div class="news_context news_wd" ng-if="msg.type == 2"  ng-click="news_redirect(msg.id,msg.type)">
                                     <div class="news_title">{{msg.asktitle}}</div>
                                 </div>
-                                <div class="news_context news_wd_rpl" ng-if="msg.type == 3">
+                                <div class="news_context news_wd_rpl" ng-if="msg.type == 3"  ng-click="news_redirect(msg.id,msg.type)">
                                     <div class="news_title">{{msg.asktitle}}</div>
                                     <div class="news_cont">{{msg.askcontent}}</div>
                                 </div>

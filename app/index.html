@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="styles/wj.css">
     <link rel="stylesheet" href="styles/wj_list.css">
     <link rel="stylesheet" href="styles/xx.css">
+    <link rel="stylesheet" href="styles/big_screen.css" media="screen and (min-width: 768px)">
     <!-- endbuild -->
     <!-- build:js(.) scripts/vendor.js -->
     <!--<script src="../bower_components/ionic/release/js/ionic.bundle.js"></script>-->
@@ -69,7 +70,7 @@
     <!-- endbuild -->
 </head>
 <body ng-controller="appCtrl">
-    <ion-nav-view name="mainContent">
+    <ion-nav-view name="mainContent" class="main_view">
     </ion-nav-view>
     <div class="rollback" ng-click="rollback()" ng-hide="!hideFooter">
         <i class="iconfont icon-fanhui2"></i>
