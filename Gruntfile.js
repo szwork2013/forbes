@@ -74,8 +74,8 @@ module.exports = function (grunt) {
         open: true,
         livereload: 35729,
         // Change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
-        //hostname: '0.0.0.0'
+        //hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {
@@ -118,7 +118,8 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= config.dist %>/*',
-            '!<%= config.dist %>/.git*'
+            '!<%= config.dist %>/.git*',
+            "!<%= config.dist %>/.svn/**"
           ]
         }]
       },

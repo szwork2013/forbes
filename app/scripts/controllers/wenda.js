@@ -5,11 +5,17 @@ angular.module('fbs.controllers')
         $scope.details = function (wendaId) {
             $state.go('wd_single',{wendaId : wendaId});
         };
-        $scope.wendas = DataAPI.get({
-                action:'getasklist',
-                pageindex:1,
-                pagesize:10
-        });
+        $scope.loading_show = true;
+
+        $scope.wdListReqOptions = {
+              action:'getasklist',
+              pageindex:1,
+              pagesize:10
+            };
+        DataAPI.get($scope.wdListReqOptions).$promise.then(function(req){
+          $scope.wendas = req;
+          $scope.loading_show = false;
+        });;
 })
 .controller('wendaSingleCtrl', function($scope,$stateParams,DataAPI) {
     var wendaId = $stateParams.wendaId;

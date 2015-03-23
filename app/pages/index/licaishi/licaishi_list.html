@@ -58,8 +58,12 @@
                 </div>
             </a>
         </div>
-        <div class="load_box">
-          <div class="loadmore" add-more-list req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'>
+
+        <div class="loading_area" ng-show="loading_show">
+            <img src="images/loading.gif" alt=""/>
+        </div>
+        <div class="load_box" ng-show="pageDatas.licaishiList.list != undefined && !isOver && !loading_show">
+          <div class="loadmore" add-more-list req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'  is-over="isOver" loading-show="loading_show">
             加载更多
           </div>
         </div>

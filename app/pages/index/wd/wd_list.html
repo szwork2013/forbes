@@ -2,23 +2,19 @@
     <ion-content>
         <div class="wd_body">
             <div class="searchHeader">
-                <div class="row">
-                    <div class="col col-20 category_list">
-                        <div class="row">
-                            <i class="iconfont icon-iconfonthuati1"></i>
-                        </div>
-                    </div>
-                    <div class="col searchGroup">
-                        <div class="row">
-                            <div class="col col-75 search_inp">
-                                <input type="text">
-                            </div>
-                            <div class="col col-25 search_btn">
-                                <i class="iconfont icon-iconfontsousuo" ></i>
-                            </div>
-                        </div>
-                    </div>
+              <div class="categorySearch" ng-click="categoryAera = !categoryAera">
+                <i class="iconfont icon-iconfonthuati1"></i>
+              </div>
+              <div class="searchGroup">
+                <div class="wrap">
+                  <div class="search_inp">
+                    <input type="text" ng-model="keyword">
+                  </div>
+                  <div class="search_btn" search-by-keyword  keyword ='keyword' req-options = 'wdListReqOptions' target-datas = 'wendas'>
+                    <i class="iconfont icon-iconfontsousuo" ></i>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="add_wd_box">
                 <a href="#/wd_add/none" class="add_wd_btn">添加问题</a>
@@ -50,6 +46,14 @@
                         </div>
                     </div>
                 </a>
+            </div>
+            <div class="loading_area" ng-show="loading_show">
+              <img src="images/loading.gif" alt=""/>
+            </div>
+            <div class="load_box" ng-show="wendas.list != undefined && !isOver  && !loading_show">
+              <div class="loadmore" add-more-list req-options = 'wdListReqOptions' target-datas = 'wendas'  is-over="isOver" loading-show="loading_show">
+                加载更多
+              </div>
             </div>
         </div>
 

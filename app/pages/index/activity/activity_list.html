@@ -78,6 +78,14 @@
                     </div>
                 </a>
             </div>
+            <div class="loading_area" ng-show="loading_show">
+              <img src="images/loading.gif" alt=""/>
+            </div>
+            <div class="load_box" ng-show="pageDatas.activityList.list != undefined && !isOver && !loading_show">
+              <div class="loadmore" add-more-list req-options = 'activityListReqOptions' target-datas = 'pageDatas.activityList' is-over="isOver"loading-show="loading_show">
+                加载更多
+              </div>
+            </div>
         </div>
     </ion-content>
 </ion-view>

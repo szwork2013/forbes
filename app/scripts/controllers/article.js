@@ -3,6 +3,7 @@ angular.module('fbs.controllers')
     $scope.details = function (newsid) {
         Tools.pageSkip('article_single',{newsid : newsid});
     };
+    $scope.loading_show = true;
     $scope.articleListReqOptions = {
       action:'getnewslist',
       pageindex:1,
@@ -16,9 +17,13 @@ angular.module('fbs.controllers')
       pagesize:10
     };
     $scope.pageDatas = {
-      articleList:DataAPI.get($scope.articleListReqOptions),
       categoryList:DataAPI.get($scope.ctgListReqOptions)
     };
+    DataAPI.get($scope.articleListReqOptions)
+      .$promise.then(function(req){
+        $scope.pageDatas.articleList = req;
+        $scope.loading_show = false;
+      });
 })
 .controller('articleSingleCtrl', function($scope,$stateParams,DataAPI,$sce) {
     var articleId = $stateParams.newsid;

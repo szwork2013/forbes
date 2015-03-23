@@ -9,11 +9,13 @@ angular.module('fbs.controllers')
         }else{
             actionsUrl = 'getmasterlist';
         }
+        $scope.loading_show = true;
 
         $scope.lcsListReqOptions = {
             action:actionsUrl,
             pageindex:1,
             pagesize:10,
+            sort:'time',
             keyword:''
         };
         $scope.categoryAera = false;
@@ -23,9 +25,13 @@ angular.module('fbs.controllers')
             pagesize:10
         };
         $scope.pageDatas = {
-            licaishiList:DataAPI.get($scope.lcsListReqOptions),
             categoryList:DataAPI.get($scope.ctgListReqOptions)
         };
+        DataAPI.get($scope.lcsListReqOptions)
+          .$promise.then(function(req){
+            $scope.pageDatas.licaishiList = req;
+            $scope.loading_show = false;
+          });
         $scope.details = function (licaishiId) {
           Tools.pageSkip('licaishi_single',{licaishiId:licaishiId});
         };

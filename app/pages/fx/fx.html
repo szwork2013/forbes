@@ -1,7 +1,7 @@
-<ion-view view-title="消息" hide-footer="false">
+<ion-view view-title="消息" hide-footer="false" ng-init="slider_show = true">
     <ion-content>
         <div class="fx_body">
-            <div class="img_slider">
+            <div class="img_slider" ng-show="slider_show">
                 <ion-slide-box class="img_slider_box">
                     <ion-slide>
                         <div class="box blue">
@@ -19,7 +19,7 @@
                         </div>
                     </ion-slide>
                 </ion-slide-box>
-                <div class="close_area">
+                <div class="close_area" ng-click="slider_show = false">
                     <i class="iconfont icon-guanbi"></i>
                 </div>
             </div>
