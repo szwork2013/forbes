@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <div class="clear"></div>
                 <div class="row">
                     <div class="col col-50">
                         <div class="content">
@@ -75,30 +75,205 @@
             </div>
 
             <div class="apply_form">
-                <div class="apply_input">
-                    <input type="text" placeholder="姓名" />
-                </div>
-                <div class="apply_input">
-                    <input type="text" placeholder="手机"/>
-                </div>
+
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">姓名</span>
+                    <input type="text" ng-model='maindata.Name' placeholder="在此输入">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">手机</span>
+                    <input type="text" ng-model='maindata.Phone' placeholder="在此输入">
+                </label>
+
                 <div class="apply_select row">
                     <div class=" col col-50">
-                        <div class="sexy" ng-class="{select:apply_data.K1 == 1}" ng-click="apply_data.K1 = 1">
+                        <div class="sexy" ng-class="{select:maindata.K1 == 1}" ng-click="maindata.K1 = 1">
                             男
                         </div>
                     </div>
                     <div class="col col-50">
-                        <div class="sexy "  ng-class="{select:apply_data.K1 == 0}" ng-click="apply_data.K1 = 0">
+                        <div class="sexy "  ng-class="{select:maindata.K1 == 0}" ng-click="maindata.K1 = 0">
                             女
                         </div>
                     </div>
                 </div>
-                <div class="apply_input"  ng-repeat="signfield in applyForm.signfield.slice(3)">
-                    <input type="text" placeholder="请输入{{signfield.key}}" ng-model='apply_data[signfield.value]'>
+
+
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">年龄</span>
+                    <input type="text" ng-model='maindata.K2' placeholder="在此输入">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">邮箱</span>
+                    <input type="text" ng-model='maindata.K3' placeholder="在此输入">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">工作单位</span>
+                    <input type="text" ng-model='maindata.K6' placeholder="在此输入">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">工作年限</span>
+                    <input type="text" ng-model='maindata.K8' placeholder="在此输入">
+                </label>
+                <!-- <label class="item item-input item-stacked-label">
+                    <span class="input-label">学历</span>
+                    <input type="text" ng-model='maindata.K11' placeholder="在此输入">
+                </label> -->
+
+                <div class="list" ng-model='maindata.K11'>
+                  <label class="item item-radio">
+                    <div class="item-content">
+                     学历
+                    </div>
+                  </label>
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" ng-model="maindata.K11" value="本科">
+                    <div class="item-content">
+                      本科
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" ng-model="maindata.K11" value="硕士">
+                    <div class="item-content">
+                      硕士
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" ng-model="maindata.K11" value="博士">
+                    <div class="item-content">
+                      博士
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                   </label>
+
+                   <label class="item item-radio">
+                    <input type="radio" name="group" ng-model="maindata.K11" value="博士后">
+                    <div class="item-content">
+                      博士后
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                   </label>
                 </div>
-                <div class="apply_sublime" ng-click="online_apply()">
-                    提 交
-                </div>
+
+
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">2013年管理资产总量(万元)</span>
+                    <input type="text" ng-model='maindata.K4' placeholder="在此输入">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">2014年管理资产总量(万元)</span>
+                    <input type="text" ng-model='maindata.K5' placeholder="在此输入">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">2015年(截止6/30)管理资产总量(万元)</span>
+                    <input type="text" ng-model='maindata.K7' placeholder="在此输入">
+                </label>
+
+
+
+                <ul class="list" >
+                      <li class="item">
+                        理财师资格证
+                      </li>
+                      <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata1.cfp.checked">
+                         </label>
+                        {{checkboxdata1.cfp.name}}
+                      </li>
+
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata1.afp.checked">
+                         </label>
+                        {{checkboxdata1.afp.name}}
+                      </li>
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata1.rfp.checked">
+                         </label>
+                         {{checkboxdata1.rfp.name}}
+                      </li>
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata1.cwm.checked">
+                         </label>
+                         {{checkboxdata1.cwm.name}}
+                      </li>
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata1.cpb.checked">
+                         </label>
+                         {{checkboxdata1.cpb.name}}
+                      </li>
+                      <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata1.rfc.checked">
+                         </label>
+                         {{checkboxdata1.rfc.name}}
+                      </li>
+                </ul>
+
+
+                  <ul class="list">
+                      <li class="item">
+                        平时理财工作侧重领域
+                      </li>
+                      <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata2.jt.checked">
+                         </label>
+                        {{checkboxdata2.jt.name}}
+                      </li>
+
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata2.zc.checked">
+                         </label>
+                        {{checkboxdata2.zc.name}}
+                      </li>
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata2.fx.checked">
+                         </label>
+                         {{checkboxdata2.fx.name}}
+                      </li>
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata2.zv.checked">
+                         </label>
+                        {{checkboxdata2.zv.name}}
+                      </li>
+                       <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata2.hf.checked">
+                         </label>
+                        {{checkboxdata2.hf.name}}
+                      </li>
+                      <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" ng-model="checkboxdata2.sw.checked">
+                         </label>
+                        {{checkboxdata2.sw.name}}
+                      </li>
+                </ul>
+              
+
+               
+                <button class="button" ng-click="submitdata()">提交</button> 
+               
+
+
+
+
             </div>
         </div>
     </ion-content>
