@@ -74,23 +74,37 @@ angular.module('fbs.controllers')
         }
 })
 .controller('licaishiHistoryCtrl',function($scope,DataAPI) {
-        DataAPI.get({
-          action:'getmasternumberlist'
-        }).$promise.then(function(resp) {
-            $scope.jieshu = resp;
-            $scope.currentJ = resp.totalcount - 2;
-        });
-        $scope.lcsListReqOptions = {
-            action:'getmasterlist',
-            pageindex:1,
-            pagesize:10,
-            number:$scope.currentJ,
-            sort:'time'
-        };
-        DataAPI.get($scope.lcsListReqOptions).$promise.then(function(resp) {
-            $scope.licaishi_list = resp.list;
-        });
-        $scope.left_disabled = false;
+    $scope.articleListReqOptions = {
+      action:'getnewslist',
+      ca:499,
+      pageindex:1,
+      pagesize:10,
+      keyword:''
+    };
+    $scope.pageDatas =  {};
+    $scope.loading_show = true;
+    DataAPI.get($scope.articleListReqOptions)
+      .$promise.then(function(req){
+        $scope.pageDatas.articleList = req;
+        $scope.loading_show = false;
+      });
+        //DataAPI.get({
+        //  action:'getmasternumberlist'
+        //}).$promise.then(function(resp) {
+        //    $scope.jieshu = resp;
+        //    $scope.currentJ = resp.totalcount - 2;
+        //});
+        //$scope.lcsListReqOptions = {
+        //    action:'getmasterlist',
+        //    pageindex:1,
+        //    pagesize:10,
+        //    number:$scope.currentJ,
+        //    sort:'time'
+        //};
+        //DataAPI.get($scope.lcsListReqOptions).$promise.then(function(resp) {
+        //    $scope.licaishi_list = resp.list;
+        //});
+        //$scope.left_disabled = false;
 });
 
 

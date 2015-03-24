@@ -4,6 +4,7 @@ angular.module('fbs.controllers')
         Tools.pageSkip('article_single',{newsid : newsid});
     };
     $scope.loading_show = true;
+    $scope.loading_show = true;
     $scope.articleListReqOptions = {
       action:'getnewslist',
       pageindex:1,
@@ -34,6 +35,7 @@ angular.module('fbs.controllers')
     $scope.SkipValidation = function(value) {
         return $sce.trustAsHtml(value);
     };
+
 });
 
 
