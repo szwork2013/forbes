@@ -1,7 +1,13 @@
 angular.module('fbs.controllers')
-.controller('personCtrl',function($scope,$state,DataAPI,$location,$cookieStore){
-    $scope.personinf = DataAPI.get({
+.controller('personCtrl',function($scope,$state,DataAPI,Tools){
+    DataAPI.get({
         action:'getcurrentuserinfo'
+    }).$promise.then(function(resq){
+        if(resq.errcode = -2 && !resq.totalscore){
+          Tools.pageSkip('login');
+        }else{
+          $scope.personinf = resq;
+        }
     });
     $scope.gxzl = function(){
         DataAPI.get({
@@ -20,11 +26,6 @@ angular.module('fbs.controllers')
     $scope.redir = function(url,p){
         $state.go(url, {operat:p}, {location:true,reload: true});
     }
-    //DataAPI.get({
-    //    action:'islogin'
-    //}).$promise.then(function(resp) {
-    //        $scope.islogin = resp;
-    //});
 });
 
 

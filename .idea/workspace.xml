@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f320080-69a2-419d-95dd-dece88b9e577" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/services/AtteLcs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/loading-spinning-bubbles.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/loading.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/activity.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/activity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/activity.less" afterPath="$PROJECT_DIR$/app/styles/activity.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/activity/activity_list.html" afterPath="$PROJECT_DIR$/app/pages/index/activity/activity_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/activity_single.less" afterPath="$PROJECT_DIR$/app/styles/activity_single.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directive/addMoreList.js" afterPath="$PROJECT_DIR$/app/scripts/directive/addMoreList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/article.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/article/article_list.html" afterPath="$PROJECT_DIR$/app/pages/index/article/article_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/commen.less" afterPath="$PROJECT_DIR$/app/styles/commen.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/fx/fx.html" afterPath="$PROJECT_DIR$/app/pages/fx/fx.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/fx.less" afterPath="$PROJECT_DIR$/app/styles/fx.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/loading.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/index.html" afterPath="$PROJECT_DIR$/app/pages/index/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/index.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/index.less" afterPath="$PROJECT_DIR$/app/styles/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/lcs.less" afterPath="$PROJECT_DIR$/app/styles/lcs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/licaishi.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/licaishi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/licaishi.less" afterPath="$PROJECT_DIR$/app/styles/licaishi.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/licaishi/licaishi_list.html" afterPath="$PROJECT_DIR$/app/pages/index/licaishi/licaishi_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/licaishi/licaishi_single.html" afterPath="$PROJECT_DIR$/app/pages/index/licaishi/licaishi_single.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/licaishi_single.less" afterPath="$PROJECT_DIR$/app/styles/licaishi_single.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/login&amp;regist.less" afterPath="$PROJECT_DIR$/app/styles/login&amp;regist.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/login.html" afterPath="$PROJECT_DIR$/app/pages/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/dev/test.less" afterPath="$PROJECT_DIR$/app/styles/dev/test.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/dev/theme.less" afterPath="$PROJECT_DIR$/app/styles/dev/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/wd.less" afterPath="$PROJECT_DIR$/app/styles/wd.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/wd/wd_list.html" afterPath="$PROJECT_DIR$/app/pages/index/wd/wd_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/person.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/grzx/wdjf.html" afterPath="$PROJECT_DIR$/app/pages/grzx/wdjf.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/wdjf.less" afterPath="$PROJECT_DIR$/app/styles/wdjf.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/wenda.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/wenda.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="forbes.iws" />
@@ -57,7 +33,48 @@
     <favorites_list name="forbes" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.36" vertical-offset="1005" max-vertical-offset="2006">
+              <caret line="92" column="134" selection-start-line="92" selection-start-column="134" selection-end-line="92" selection-end-column="134" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0563107" vertical-offset="34" max-vertical-offset="969">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/pageList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.1" vertical-offset="0" max-vertical-offset="765">
+              <caret line="9" column="50" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8333335" vertical-offset="615" max-vertical-offset="4641">
+              <caret line="50" column="33" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -70,9 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/app/scripts/services/DataAPI.js" />
-        <option value="$PROJECT_DIR$/app/pages/grzx/grzx.html" />
         <option value="$PROJECT_DIR$/app/styles/lcs_history.less" />
         <option value="$PROJECT_DIR$/app/pages/fx/lcs_history.html" />
         <option value="$PROJECT_DIR$/app/styles/lcs_apply.less" />
@@ -105,22 +119,25 @@
         <option value="$PROJECT_DIR$/app/styles/wd.less" />
         <option value="$PROJECT_DIR$/app/styles/dev/test.less" />
         <option value="$PROJECT_DIR$/app/scripts/directive/addMoreList.js" />
-        <option value="$PROJECT_DIR$/app/pages/index/index.html" />
         <option value="$PROJECT_DIR$/app/styles/dev/theme.less" />
-        <option value="$PROJECT_DIR$/app/styles/index.less" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/pages/index/activity/activity_list.html" />
         <option value="$PROJECT_DIR$/app/pages/index/article/article_list.html" />
         <option value="$PROJECT_DIR$/app/pages/index/wd/wd_list.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/index.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/activity.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/wenda.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/article.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/licaishi.js" />
         <option value="$PROJECT_DIR$/app/pages/index/licaishi/licaishi_list.html" />
         <option value="$PROJECT_DIR$/app/styles/commen.less" />
-        <option value="$PROJECT_DIR$/app/styles/wdjf.less" />
         <option value="$PROJECT_DIR$/app/styles/lcs.less" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/big_screen.less" />
+        <option value="$PROJECT_DIR$/app/pages/grzx/wdjf.html" />
+        <option value="$PROJECT_DIR$/app/styles/wdjf.less" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/person.js" />
+        <option value="$PROJECT_DIR$/app/styles/index.less" />
+        <option value="$PROJECT_DIR$/app/pages/index/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/index.js" />
       </list>
     </option>
   </component>
@@ -332,6 +349,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -466,7 +537,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426861239583</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="交互更新">
+      <created>1427088917032</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1427088917032</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -490,26 +567,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="7" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2593361" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3776596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3174274" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2593361" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37759337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43568465" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15686275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15686275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32572615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3755319" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40319148" sideWeight="0.6146552" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40248963" sideWeight="0.6146552" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -539,9 +616,9 @@
     <MESSAGE value="补充内容&#10;" />
     <MESSAGE value="首页slider图片" />
     <MESSAGE value="样式更新" />
-    <MESSAGE value="交互更新" />
     <MESSAGE value="交互更新二" />
-    <option name="LAST_COMMIT_MESSAGE" value="交互更新二" />
+    <MESSAGE value="交互更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="交互更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -550,28 +627,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/pages/index/wd/wd_single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41371682" vertical-offset="0" max-vertical-offset="459">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directive/searchByCategory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6038835" vertical-offset="12" max-vertical-offset="527">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/sign.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="952">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directive/operateFooter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12615955" vertical-offset="0" max-vertical-offset="539">
@@ -637,21 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/person.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3744" max-vertical-offset="4641">
-          <caret line="231" column="31" selection-start-line="231" selection-start-column="31" selection-end-line="231" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/Tools.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1229135" vertical-offset="21" max-vertical-offset="680">
@@ -704,28 +744,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/activity.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.56" vertical-offset="1" max-vertical-offset="1598">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#365#461#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/activity_single.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55689657" vertical-offset="0" max-vertical-offset="2873">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/images/loading.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -839,14 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37226278" vertical-offset="0" max-vertical-offset="714">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/wenda.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
@@ -890,25 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12878788" vertical-offset="0" max-vertical-offset="663">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#86#274#0" expanded="false" />
-            <element signature="e#324#1046#0" expanded="false" />
-            <element signature="e#1060#1537#0" expanded="false" />
-            <element signature="e#1418#1533#0" expanded="false" />
-            <element signature="e#1711#2303#0" expanded="false" />
-            <element signature="e#1762#2142#0" expanded="false" />
-            <element signature="e#2322#3257#0" expanded="false" />
-            <element signature="e#3283#3465#0" expanded="false" />
-            <element signature="e#3490#3713#0" expanded="false" />
-            <element signature="e#3745#3810#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/index/licaishi/licaishi_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61823803" vertical-offset="399" max-vertical-offset="1071">
@@ -941,35 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/wdjf.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76969695" vertical-offset="2" max-vertical-offset="731">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="e#318#498#0" expanded="false" />
-            <element signature="e#848#2572#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-42.36" vertical-offset="709" max-vertical-offset="2006">
-          <caret line="104" column="158" selection-start-line="104" selection-start-column="131" selection-end-line="104" selection-end-column="158" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5621212" vertical-offset="1193" max-vertical-offset="1853">
-          <caret line="92" column="66" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#ion-footer-bar#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/fx/lcs_apply.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
@@ -990,6 +957,116 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05151515" vertical-offset="0" max-vertical-offset="660">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/activity.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1598">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
+          <folding>
+            <element signature="e#365#461#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/big_screen.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05151515" vertical-offset="0" max-vertical-offset="660">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666" vertical-offset="867" max-vertical-offset="1870">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#ion-footer-bar#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/grzx/grzx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6181818" vertical-offset="51" max-vertical-offset="1904">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/wdjf.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2" vertical-offset="1529" max-vertical-offset="2159">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/grzx/wdjf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="799">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/person.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19854015" vertical-offset="0" max-vertical-offset="799">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6636364" vertical-offset="361" max-vertical-offset="1275">
+          <caret line="147" column="28" selection-start-line="147" selection-start-column="28" selection-end-line="147" selection-end-column="28" />
+          <folding>
+            <element signature="e#86#274#0" expanded="false" />
+            <element signature="e#324#1046#0" expanded="false" />
+            <element signature="e#1060#1537#0" expanded="false" />
+            <element signature="e#1418#1533#0" expanded="false" />
+            <element signature="e#1711#2303#0" expanded="false" />
+            <element signature="e#1762#2142#0" expanded="false" />
+            <element signature="e#3298#3480#0" expanded="false" />
+            <element signature="e#3505#3728#0" expanded="false" />
+            <element signature="e#3760#3825#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/pageList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1" vertical-offset="0" max-vertical-offset="765">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8333335" vertical-offset="615" max-vertical-offset="4641">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.36" vertical-offset="1005" max-vertical-offset="2006">
+          <caret line="92" column="134" selection-start-line="92" selection-start-column="134" selection-end-line="92" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0563107" vertical-offset="34" max-vertical-offset="969">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding />
         </state>
       </provider>

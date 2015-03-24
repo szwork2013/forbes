@@ -2,28 +2,28 @@
     <ion-content>
         <div class="lcs_history_body">
             <div class="shaixuan">
-              <div class="left_sear fy">
+              <div class="left_sear fy" lcs-history operat="left" current-jieshu="currentJ" ng-disabled="left_disabled" ng-class="{div_forbid:left_disabled}" left-disabled="left_disabled">
                 <i class="iconfont icon-zuo"></i>
               </div>
               <div class="selector_body">
-                <div class="selector">
-                  第五届
+                <div class="selector" >
+                  {{jieshu.list[currentJ - 1]}}<span ng-show="jieshu.list[currentJ - 1]">届</span>
                 </div>
                 <div class="selector main">
-                  第六届
+                  {{jieshu.list[currentJ]}}届
                 </div>
                 <div class="selector">
-                  第七届
+                  {{jieshu.list[currentJ + 1]}}届
                 </div>
               </div>
-              <div class="right_sear fy">
+              <div class="right_sear fy" lcs-history operat="right" current-jieshu="currentJ">
                 <i class="iconfont icon-you"></i>
               </div>
             </div>
             <div class="list lcs_list">
-                <div class="item">
-                    <div class="lcs_img">
-                        <img src="assets/images/person.png" alt=""/>
+                <div class="item" ng-repeat="lcs in licaishi_list">
+                    <div class="lcs_img" >
+                      <img ng-src="{{lcs.headimg}}" />
                     </div>
                     <div class="lcs_details">
                         <div class="lcs_details_item">
@@ -31,7 +31,7 @@
                                 姓名:
                             </div>
                             <div class="lcs_details_item_content">
-                                周大幅
+                                {{lcs.truename}}
                             </div>
                         </div>
                         <div class="lcs_details_item">
@@ -39,7 +39,7 @@
                                 职业:
                             </div>
                             <div class="lcs_details_item_content">
-                                周大幅
+                              {{lcs.postion}}
                             </div>
                         </div>
                         <div class="lcs_details_item">
@@ -47,7 +47,7 @@
                                 企业:
                             </div>
                             <div class="lcs_details_item_content">
-                                周大幅
+                              {{lcs.company}}
                             </div>
                         </div>
                     </div>
