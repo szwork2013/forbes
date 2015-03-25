@@ -72,6 +72,7 @@
     <script src="scripts/directive/addMoreList.js"></script>
     <script src="scripts/directive/sentYzm.js"></script>
     <script src="scripts/directive/lcsHistory.js"></script>
+    <script src="scripts/directive/replyWenda.js"></script>
     <!-- endbuild -->
 </head>
 <body ng-controller="appCtrl">
@@ -103,6 +104,7 @@
         </div>
     </ion-footer-bar>
     <div class="operate_msg" ng-show="msg_show">
+      {{msg_cont}}
     </div>
 </body>
 </html>

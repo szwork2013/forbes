@@ -64,11 +64,11 @@
 <ion-footer-bar class="wd_rep">
   <div class="rep_body">
     <div class="rep_input">
-      <input type="text" placeholder="回复问题"/>
+      <input type="text" placeholder="回复问题" ng-model="reply_text"/>
     </div>
   </div>
   <div class="rep_commit">
-    <div class="rep_btn">
+    <div class="rep_btn" reply-wenda reply-body="reply_text" wenda-id="{{wendaId}}" target-data="wenda" req-options="reqOptions">
       发送
     </div>
   </div>
