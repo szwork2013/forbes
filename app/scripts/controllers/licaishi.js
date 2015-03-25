@@ -76,7 +76,7 @@ angular.module('fbs.controllers')
 .controller('licaishiHistoryCtrl',function($scope,DataAPI) {
     $scope.articleListReqOptions = {
       action:'getnewslist',
-      ca:499,
+      cateid:499,
       pageindex:1,
       pagesize:10,
       keyword:''
