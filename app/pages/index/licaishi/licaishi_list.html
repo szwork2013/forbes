@@ -1,15 +1,25 @@
 <ion-view view-title="理财师列表" hide-footer="true" >
-    <div class="licaishi_body">
+    <div id="sp-nav">
+      <div class="topcoat-list-container">
+        <ul class="topcoat-list">
+          <li class="item topcoat-list__item" style="height:40px;padding:0"  ng-click="$spMenu.toggle()" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.tagid' req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'>
+            {{category.tagname}}
+          </li>
+          <!--<li class="topcoat-list__item">Navigation Item 1</li>-->
+          <!--<li class="topcoat-list__item" >Navigation Item 2</li>-->
+          <!--<li class="topcoat-list__item">Navigation Item 3</li>-->
+        </ul>
+      </div>
+    </div>
+    <div class="licaishi_body" id="sp-page">
         <div class="searchHeader">
-            <div class="categorySearch" ng-click="categoryAera = !categoryAera">
+            <div class="categorySearch"  ng-click="$spMenu.toggle()">
                 <i class="iconfont icon-iconfontliebiao"></i>
-                <div  class="category_list" ng-show="categoryAera">
-                    <div class="list">
-                        <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.tagid' req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'>
-                          {{category.tagname}}
-                        </a>
-                    </div>
-                </div>
+                <!--<div  class="category_list" ng-show="categoryAera">-->
+                    <!--<div class="list">-->
+                        <!---->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
             <div class="searchGroup">
                 <div class="wrap">

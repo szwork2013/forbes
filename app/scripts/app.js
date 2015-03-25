@@ -6,7 +6,8 @@ var app = angular.module('fbs', [
     'fbs.controllers',
     'fbs.filters',
     'fbs.directives',
-    'fbs.services'
+    'fbs.services',
+    'shoppinpal.mobile-menu'
 ]);
 app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$resourceProvider){
     $resourceProvider.defaults.stripTrailingSlashes = false;
