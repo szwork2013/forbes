@@ -24,7 +24,7 @@
     .func_item{
       text-align: center;
       .item_logo{
-        @logo-w:20vw;
+        @logo-w:60px;
         width: @logo-w;
         height:@logo-w;
         line-height: @logo-w;
@@ -32,9 +32,9 @@
         border-radius: 50%;
         .test_border;
         margin: 0 auto;
-        margin-bottom: 2vw;
+        margin-bottom: 8px;
         .iconfont{
-          font-size: 12vw;
+          font-size: 28px;
           color: white;
         }
       }
@@ -59,7 +59,7 @@
     }
   }
   .img_slider{
-    @slider_h:48vw;
+    @slider_h:160px;
     width: 100%;
     min-height: @slider_h;
     height: @slider_h;
@@ -88,7 +88,7 @@
   }
   .latest_news{
     .list{
-      .item{
+      .item1{
         margin: 0;
         padding: 0;
         border: 0;
@@ -115,7 +115,7 @@
           .head_img:before{
             content: "";
             display: block;
-            padding-top: 100%; 	/* initial ratio of 1:1*/
+            padding-top: 100%;  /* initial ratio of 1:1*/
           }
         }
         .news_body{
@@ -123,15 +123,18 @@
           .test_border;
           padding-left: 15px;
           .news_main{
-            margin-top: 4vw;
+            margin-top: 12px;
           }
           .news_type{
+            width:30%;
             font-size: 10px;
             float: left;
             color: rgba(143, 139, 139, 0.69);
           }
           .news_time{
+            width:70%;
             font-size: 13px;
+            text-align: right;
             float: right;
             color: rgba(143, 139, 139, 0.69);
           }
@@ -169,16 +172,18 @@
           left: -5px;
           width: 8px;
           height: 8px;
-          top: 7vw;
+          top: 24px;
           border-radius: 50%;
           background-color: @theme-color;
         }
       }
-      .item:first-child{
+      .item1:first-child{
         .news_body:before{
-          top:7vw;
+          top:24px;
         }
       }
+
+
     }
   }
 }

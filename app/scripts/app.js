@@ -138,7 +138,7 @@ app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$reso
         url: '/lcs_apply',
         views: {
             'mainContent': {
-                templateUrl: 'pages/fx/lcs_apply.html',
+                templateUrl: 'pages/fx/lcs_unapply.html',
                 controller:'licaishiOtherCtrl'
             }
         }
