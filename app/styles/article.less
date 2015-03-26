@@ -59,6 +59,11 @@
         .article_title{
           font-size: 20px;
           font-weight: 600;
+          width:100%;
+          word-break:keep-all;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
         }
         .article_rels{
           margin-top: 5px;
@@ -71,6 +76,7 @@
           width: 100%;
           float: left;
           margin: 5px 0;
+          max-height: 38px;
           .default-small-text;
         }
       }

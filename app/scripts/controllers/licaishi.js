@@ -135,6 +135,7 @@ angular.module('fbs.controllers')
 
 
         $scope.maindata={
+            K9:0,
             Name:"",
             Phone:"",
             K1:1,

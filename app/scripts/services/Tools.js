@@ -12,8 +12,15 @@ angular.module('fbs.services')
             //console.log($ionicHistory.viewHistory());
             //console.log($ionicHistory.backView());
             var retObj = $ionicHistory.backView();
+
+
             if($ionicHistory.backView()){
-                $state.go(retObj.stateName,retObj.stateParams,options);
+                if($state.$current.self.name=== "login"){
+                    $state.go("index");
+                }else{
+
+                    $state.go(retObj.stateName,retObj.stateParams,options);
+                }
             }else{
                 //页面刷新后返回按钮无效  统一回首页
                 $state.go("index");
