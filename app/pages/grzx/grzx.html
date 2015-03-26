@@ -1,7 +1,7 @@
 <ion-view view-title="个人中心" hide-footer="false">
     <ion-content>
         <div class="grzx_body">
-            <div class="person_main" ng-show="personinf.truename != null">
+            <div class="person_main" ng-show="personinf.headimg != null">
                 <div class="person_head">
                     <div class="head_img">
                         <img ng-src="{{personinf.headimg}}" />
@@ -24,7 +24,7 @@
                     </a>
                 </div>
             </div>
-            <div class="login_box" ng-show="personinf.truename == null">
+            <div class="login_box" ng-show="personinf.headimg == null">
                 <a href="#/login" class="login_btn" >登录</a>
             </div>
             <div class="person_rels">

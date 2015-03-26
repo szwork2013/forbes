@@ -3,7 +3,7 @@ angular.module('fbs.controllers')
     DataAPI.get({
         action:'getcurrentuserinfo'
     }).$promise.then(function(resq){
-        if(resq.errcode = -2 && !resq.totalscore){
+        if(!resq.headimg){
           Tools.pageSkip('login');
         }else{
           $scope.personinf = resq;
@@ -15,8 +15,13 @@ angular.module('fbs.controllers')
             truename:$scope.personinf.truename,
             postion:$scope.personinf.postion,
             company:$scope.personinf.company
-        });
-        $scope.$apply();
+        }).$promise.then(function(resq){
+            if(resq.errcode == 0){
+              Tools.pageSkip('grzx');
+            }else{
+              Tools.msgShow(resq.errmsg);
+            }
+          });
     }
     $scope.wdjf = DataAPI.get({
         action:'getscorerecordlist',

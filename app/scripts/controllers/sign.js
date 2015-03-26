@@ -2,17 +2,13 @@ angular.module('fbs.controllers')
 .controller('signCtrl',function($scope,DataAPI,Tools,$cookieStore) {
         $scope.signInData = {};
         $scope.signInData.action = "login";
-        $scope.signInData.userid = "forbesuser1";
+        $scope.signInData.userid = "15351998091";
         $scope.signInData.pwd = "123456";
         $scope.login = function(){
             DataAPI.get($scope.signInData).$promise.then(function(resp) {
                 console.log(resp);
                 if(resp.issuccess){
                     Tools.pageReturn();
-                //  setCookie
-                    var loginUser = {};
-                    loginUser.userId = resp.userid;
-                    $cookieStore.put('loginUser',loginUser);
                 }else{
                     console.log(resp.message);
                 }

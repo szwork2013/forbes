@@ -69,7 +69,8 @@
                         </div>
                         <div style="clear:both;"></div>
                         <div class="activity_status">
-                            <div ng-class="{triangle:true,activity_status_over:activity.status != 0} ">
+                            <div ng-class="{triangle:activity.status == 0,activity_status_over:activity.status != 0}">
+
                             </div>
                             <p>
                                 {{activity.status | activityStatusTextFilter}}
