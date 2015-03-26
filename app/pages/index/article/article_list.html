@@ -6,7 +6,7 @@
               <i class="iconfont icon-iconfontliebiao"></i>
               <div  class="category_list" ng-show="categoryAera">
                 <div class="list">
-                  <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.categoryid' req-options = 'articleListReqOptions' target-datas = 'pageDatas.articleList'>
+                  <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list | articleCatFilter" search-by-category category-aera="categoryAera" category-id='category.categoryid' req-options = 'articleListReqOptions' target-datas = 'pageDatas.articleList'>
                     {{category.categoryname}}
                   </a>
                 </div>

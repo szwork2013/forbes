@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1427036515_2076218.css"/>
     <!-- build:css(.) styles/modules.css -->
     <link rel="stylesheet" href="bower_components/ionic/css/ionic.css">
+    <link rel="stylesheet" href="bower_components/ng-mobile-menu-master/dist/ng-mobile-menu.min.css">
+    <link rel="stylesheet" href="bower_components/ng-mobile-menu-master/demo/topcoat/css/topcoat-mobile-light.min.css">
     <!-- endbuild -->
 
     <!-- build:css(.tmp) styles/main.css -->
@@ -43,6 +45,8 @@
     <script src="bower_components/ionic/js/ionic.bundle.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script  src="bower_components/angular-mobile-layout/release/angular-mobile-layout.js"></script>
+    <script  src="bower_components/ng-mobile-menu-master/dist/ng-mobile-menu.min.js"></script>
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/app.js"></script>
@@ -62,12 +66,14 @@
     <script src="scripts/filters/activity.js"></script>
     <script src="scripts/filters/msgType.js"></script>
     <script src="scripts/filters/lcsAttention.js"></script>
+    <script src="scripts/filters/articleCatFilter.js"></script>
     <script src="scripts/directive/operateFooter.js"></script>
     <script src="scripts/directive/searchByKeyword.js"></script>
     <script src="scripts/directive/searchByCategory.js"></script>
     <script src="scripts/directive/addMoreList.js"></script>
     <script src="scripts/directive/sentYzm.js"></script>
     <script src="scripts/directive/lcsHistory.js"></script>
+    <script src="scripts/directive/replyWenda.js"></script>
     <!-- endbuild -->
 </head>
 <body ng-controller="appCtrl">
@@ -99,6 +105,7 @@
         </div>
     </ion-footer-bar>
     <div class="operate_msg" ng-show="msg_show">
+      {{msg_cont}}
     </div>
 </body>
 </html>

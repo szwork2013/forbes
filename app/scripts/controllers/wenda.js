@@ -17,12 +17,29 @@ angular.module('fbs.controllers')
           $scope.loading_show = false;
         });;
 })
-.controller('wendaSingleCtrl', function($scope,$stateParams,DataAPI) {
-    var wendaId = $stateParams.wendaId;
-    $scope.wenda = DataAPI.get({
-        action:'getaskdetail',
-        id:wendaId
-    });
+.controller('wendaSingleCtrl', function($scope,$stateParams,DataAPI,Tools) {
+    $scope.wendaId = $stateParams.wendaId;
+    $scope.reqOptions = {
+      action:'getaskdetail',
+      id:$scope.wendaId
+    };
+    $scope.wenda = DataAPI.get($scope.reqOptions);
+
+    //$scope.reply = function(){
+    //    DataAPI.get({
+    //      action:'replyask',
+    //      id:wendaId,
+    //      content:$scope.reply_text
+    //    }).$promise.then(function(resp) {
+    //        if(resp.errcode == 0){
+    //          $scope.reply_text = "";
+    //          Tools.msgShow(resp.errmsg);
+    //        }else{
+    //          console.log(resp.errmsg);
+    //          Tools.msgShow(resp.errmsg);
+    //        }
+    //      });
+    //}
 })
 .controller('wendaAddCtrl', function($scope,$stateParams,$rootScope,DataAPI,Tools) {
         var touserid;
