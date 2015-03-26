@@ -79,7 +79,7 @@
                                 <div class="news_time">
                                     {{msg.time | date : 'yyyy年MM月dd日 HH:mm' }}
                                 </div>
-                                
+
                                 <div class="news_context item-text-wrap news_activity" ng-click="news_redirect(msg.id,msg.type)">
                                     <div class="news_title">
                                         {{msg.newstitle}}
@@ -88,7 +88,6 @@
                                     </div>
                                     <div class="news_cont" ng-if="msg.type == 1">时间:{{msg.activitytime | date : 'yyyy年MM月dd日 HH:mm:ss'}}</div>
                                     <div class="news_cont" ng-if="msg.type == 1">地点:{{msg.activityaddress}}</div>
-
                                     <div class="news_cont">
                                        {{msg.askcontent}}
                                        {{msg.digest}}

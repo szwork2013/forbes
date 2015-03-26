@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f320080-69a2-419d-95dd-dece88b9e577" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/topcoat/font/SourceSansPro-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/topcoat/font/SourceSansPro-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/topcoat/font/SourceSansPro-Semibold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/topcoat/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/topcoat/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/topcoat/img/hamburger_dark.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pages/fx/lcs_unapply.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/lcs_unapply.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/src/ng-mobile-menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/src/ng-mobile-menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/src/ng-mobile-menu.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/ng-mobile-menu.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/ng-mobile-menu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/skinny.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/topcoat/css/topcoat-mobile-light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ng-mobile-menu-master/demo/wide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/Tools.js" afterPath="$PROJECT_DIR$/app/scripts/services/Tools.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/article.less" afterPath="$PROJECT_DIR$/app/styles/article.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/grzx.less" afterPath="$PROJECT_DIR$/app/styles/grzx.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/grzx/gxzl.html" afterPath="$PROJECT_DIR$/app/pages/grzx/gxzl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/activity.less" afterPath="$PROJECT_DIR$/app/styles/activity.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/activity/activity_list.html" afterPath="$PROJECT_DIR$/app/pages/index/activity/activity_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/activity/activity_single.html" afterPath="$PROJECT_DIR$/app/pages/index/activity/activity_single.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/activity_single.less" afterPath="$PROJECT_DIR$/app/styles/activity_single.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/index/index.html" afterPath="$PROJECT_DIR$/app/pages/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/index.less" afterPath="$PROJECT_DIR$/app/styles/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/fx/lcs.html" afterPath="$PROJECT_DIR$/app/pages/fx/lcs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/lcs.less" afterPath="$PROJECT_DIR$/app/styles/lcs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/fx/lcs_apply.html" afterPath="$PROJECT_DIR$/app/pages/fx/lcs_apply.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/licaishi.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/licaishi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/person.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/person.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/sign.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/sign.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/grzx/wdjf.html" afterPath="$PROJECT_DIR$/app/pages/grzx/wdjf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/wdjf.less" afterPath="$PROJECT_DIR$/app/styles/wdjf.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="forbes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,18 +32,7 @@
     <favorites_list name="forbes" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="sign.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/sign.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13492064" vertical-offset="0" max-vertical-offset="884">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -101,8 +61,6 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/activity.js" />
         <option value="$PROJECT_DIR$/app/styles/lcs.less" />
         <option value="$PROJECT_DIR$/app/styles/big_screen.less" />
-        <option value="$PROJECT_DIR$/app/pages/grzx/wdjf.html" />
-        <option value="$PROJECT_DIR$/app/styles/wdjf.less" />
         <option value="$PROJECT_DIR$/app/styles/index.less" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/index.js" />
         <option value="$PROJECT_DIR$/app/styles/commen.less" />
@@ -112,12 +70,10 @@
         <option value="$PROJECT_DIR$/app/pages/fx/lcs_apply.html" />
         <option value="$PROJECT_DIR$/app/pages/fx/lcs_history.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/licaishi.js" />
-        <option value="$PROJECT_DIR$/app/pages/index/article/article_list.html" />
         <option value="$PROJECT_DIR$/app/scripts/filters/articleCatFilter.js" />
         <option value="$PROJECT_DIR$/app/scripts/filters/articleFilter.js" />
         <option value="$PROJECT_DIR$/app/pages/index/article/article_single.html" />
         <option value="$PROJECT_DIR$/app/pages/fx/lcs.html" />
-        <option value="$PROJECT_DIR$/app/pages/index/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/faxian.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
@@ -129,13 +85,17 @@
         <option value="$PROJECT_DIR$/app/pages/index/wd/wd_single.html" />
         <option value="$PROJECT_DIR$/app/scripts/directive/replyWenda.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/app/styles/activity_single.less" />
-        <option value="$PROJECT_DIR$/app/styles/activity.less" />
-        <option value="$PROJECT_DIR$/app/pages/index/activity/activity_single.html" />
-        <option value="$PROJECT_DIR$/app/pages/index/activity/activity_list.html" />
         <option value="$PROJECT_DIR$/app/pages/grzx/grzx.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/person.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/sign.js" />
+        <option value="$PROJECT_DIR$/app/pages/index/article/article_list.html" />
+        <option value="$PROJECT_DIR$/app/pages/grzx/wdjf.html" />
+        <option value="$PROJECT_DIR$/app/pages/index/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/wdjf.less" />
+        <option value="$PROJECT_DIR$/app/pages/index/activity/activity_list.html" />
+        <option value="$PROJECT_DIR$/app/styles/activity.less" />
+        <option value="$PROJECT_DIR$/app/styles/activity_single.less" />
+        <option value="$PROJECT_DIR$/app/pages/index/activity/activity_single.html" />
       </list>
     </option>
   </component>
@@ -301,10 +261,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="85" />
-    <option name="y" value="7" />
-    <option name="width" value="1127" />
-    <option name="height" value="1065" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -329,7 +289,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -376,7 +335,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,16 +353,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forbes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,14 +430,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -441,6 +441,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -584,7 +588,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427355976775</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Merge branch 'dev-main' of github.com:shanghaicomeoncloud/forbes into dev-main&#10;&#10;Conflicts:&#10;&#9;app/scripts/controllers/sign.js&#10;">
+      <created>1427356234783</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1427356234783</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -608,29 +618,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="85" y="7" width="1127" height="1065" extended-state="0" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2966805" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24481328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.698821" sideWeight="0.49954087" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3973029" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.244373" sideWeight="0.49954087" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5580913" sideWeight="0.49945533" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27640036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16394335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32572615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.698821" sideWeight="0.50045913" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5580913" sideWeight="0.50054467" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29367632" sideWeight="0.61432505" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -664,7 +674,8 @@
     <MESSAGE value="侧栏菜单" />
     <MESSAGE value="问答回复" />
     <MESSAGE value="3.26问题修复；&#10;1，活动状态；&#10;2，登录逻辑；" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.26问题修复；&#10;1，活动状态；&#10;2，登录逻辑；" />
+    <MESSAGE value="Merge branch 'dev-main' of github.com:shanghaicomeoncloud/forbes into dev-main&#10;&#10;Conflicts:&#10;&#9;app/scripts/controllers/sign.js&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dev-main' of github.com:shanghaicomeoncloud/forbes into dev-main&#10;&#10;Conflicts:&#10;&#9;app/scripts/controllers/sign.js&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -673,55 +684,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/pages/grzx/wdjf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="799">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6636364" vertical-offset="361" max-vertical-offset="1275">
-          <caret line="147" column="28" selection-start-line="147" selection-start-column="28" selection-end-line="147" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/pageList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1" vertical-offset="0" max-vertical-offset="765">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6" vertical-offset="34" max-vertical-offset="969">
-          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/commen.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74486303" vertical-offset="551" max-vertical-offset="1241">
-          <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directive/operateFooter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/lcs_history.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48555955" vertical-offset="156" max-vertical-offset="1751">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/login&amp;regist.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33212996" vertical-offset="700" max-vertical-offset="1326">
@@ -789,13 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index/article/article_single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="510">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -876,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index/licaishi/licaishi_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1496">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1989">
@@ -910,13 +858,6 @@
         <state vertical-scroll-proportion="0.47663552" vertical-offset="0" max-vertical-offset="816">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/Tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7036048" vertical-offset="0" max-vertical-offset="749">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -955,62 +896,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5267062" vertical-offset="1073" max-vertical-offset="2006">
-          <caret line="84" column="102" selection-start-line="84" selection-start-column="94" selection-end-line="84" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1052" max-vertical-offset="7259">
           <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/activity.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1751">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index/article/article_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.4" vertical-offset="204" max-vertical-offset="1105">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index/activity/activity_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63993454" vertical-offset="816" max-vertical-offset="1683">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index/activity/activity_single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2700491" vertical-offset="634" max-vertical-offset="1462">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#div#3;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/activity_single.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.76" vertical-offset="616" max-vertical-offset="2516">
-          <caret line="79" column="42" selection-start-line="76" selection-start-column="7" selection-end-line="79" selection-end-column="42" />
-          <folding>
-            <element signature="e#788#1152#0" expanded="false" />
-            <element signature="e#1170#1203#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.036364" vertical-offset="0" max-vertical-offset="1904">
           <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.866667" vertical-offset="2395" max-vertical-offset="4675">
           <caret line="153" column="18" selection-start-line="153" selection-start-column="14" selection-end-line="153" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,15 +921,160 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.550077" vertical-offset="0" max-vertical-offset="884">
           <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/DataAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/AtteLcs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/Tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78571427" vertical-offset="32" max-vertical-offset="799">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/activity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/article/article_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.581818" vertical-offset="449" max-vertical-offset="1105">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/licaishi/licaishi_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54545456" vertical-offset="98" max-vertical-offset="1496">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/licaishi/licaishi_single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54545456" vertical-offset="30" max-vertical-offset="1479">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/article/article_single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.327273" vertical-offset="0" max-vertical-offset="510">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/wd/wd_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="661">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/sign.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13492064" vertical-offset="0" max-vertical-offset="884">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3600605" vertical-offset="0" max-vertical-offset="884">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/grzx/wdjf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5448718" vertical-offset="0" max-vertical-offset="799">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.72" vertical-offset="1213" max-vertical-offset="1989">
+          <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/wdjf.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19354838" vertical-offset="1071" max-vertical-offset="1955">
+          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+          <folding>
+            <element signature="e#1208#1623#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/activity.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4941177" vertical-offset="179" max-vertical-offset="731">
+          <caret line="108" column="5" selection-start-line="97" selection-start-column="4" selection-end-line="108" selection-end-column="5" />
+          <folding>
+            <element signature="e#389#485#0" expanded="false" />
+            <element signature="e#499#1955#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/activity_single.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.24" vertical-offset="170" max-vertical-offset="1445">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#204#374#0" expanded="false" />
+            <element signature="e#391#460#0" expanded="false" />
+            <element signature="e#1116#1480#0" expanded="false" />
+            <element signature="e#1498#1531#0" expanded="false" />
+            <element signature="e#2170#2923#0" expanded="false" />
+            <element signature="e#2942#3035#0" expanded="false" />
+            <element signature="e#3053#3399#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/activity/activity_single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5313093" vertical-offset="315" max-vertical-offset="1105">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#1;n#div#3;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#3;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#3;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#4;n#div#3;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#div#6;n#div#3;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index/activity/activity_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26848248" vertical-offset="406" max-vertical-offset="935">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="81" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#1;n#a#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
