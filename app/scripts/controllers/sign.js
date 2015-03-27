@@ -19,8 +19,8 @@ angular.module('fbs.controllers')
         };
         $scope.registData = {};
         $scope.registData.action  = 'reg';
-        $scope.registData.phone  = 18573619055;
-        $scope.registData.pwd  = '123';
+        $scope.registData.phone;
+        $scope.registData.pwd;
         $scope.registSub = function(){
             DataAPI.get($scope.registData).$promise.then(function(resp) {
                     if(resp.errcode == 0){
