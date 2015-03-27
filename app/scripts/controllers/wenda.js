@@ -42,7 +42,7 @@ angular.module('fbs.controllers')
     //}
 })
 .controller('wendaAddCtrl', function($scope,$stateParams,$rootScope,DataAPI,Tools) {
-        var touserid;
+      var touserid;
         if($stateParams.touserid != 'none'){
             touserid = $stateParams.touserid
         }
@@ -55,10 +55,8 @@ angular.module('fbs.controllers')
                 touserid:touserid
             }).$promise.then(function(resp) {
                 if(resp.errcode == 0){
-                    console.log("话题添加成功");
                     Tools.pageSkip('wd_list', {operat:'all'});
-                }else if(resp.errcode == 1){
-                    console.log("尚未登录");
+                }else{
                     Tools.msgShow("请登录");
                     Tools.pageSkip('login',null);
                 }
@@ -66,6 +64,7 @@ angular.module('fbs.controllers')
         }
         $scope.cancelAdd = function(){
             console.log('取消话题添加');
+            Tools.msgShow("请登录");
             Tools.pageReturn();
         }
 });
