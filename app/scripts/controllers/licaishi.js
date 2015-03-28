@@ -10,7 +10,6 @@ angular.module('fbs.controllers')
             actionsUrl = 'getmasterlist';
         }
         $scope.loading_show = true;
-
         $scope.lcsListReqOptions = {
             action:actionsUrl,
             pageindex:1,
@@ -18,13 +17,13 @@ angular.module('fbs.controllers')
             sort:'time',
             keyword:''
         };
-        $scope.categoryAera = false;
         $scope.ctgListReqOptions = {
             action:'getmastertaglist',
             pageindex:1,
             pagesize:10
         };
         $scope.pageDatas = {
+            currentCateId:9999,
             categoryList:DataAPI.get($scope.ctgListReqOptions)
         };
         DataAPI.get($scope.lcsListReqOptions)
@@ -160,7 +159,7 @@ angular.module('fbs.controllers')
             }
         }
         $scope.maindata.K13=$scope.maindata.K13.substring(0, $scope.maindata.K13.length-1)
-        
+
         for(bb in $scope.checkboxdata2){
             if($scope.checkboxdata2[bb].checked == true){
                 $scope.maindata.K15 +=$scope.checkboxdata2[bb].name+",";
@@ -176,7 +175,7 @@ angular.module('fbs.controllers')
             mainurl+= "&"+cc+"="+$scope.maindata[cc];
         }
         mainurl+="&callback=JSON_CALLBACK";
-    
+
         $http.jsonp(mainurl)
         .success(function(data){
             if(!data.errcode){

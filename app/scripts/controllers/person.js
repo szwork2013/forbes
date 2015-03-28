@@ -4,6 +4,7 @@ angular.module('fbs.controllers')
         action:'getcurrentuserinfo'
     }).$promise.then(function(resq){
         if(!resq.headimg){
+          console.log("去登录");
           Tools.pageSkip('login');
         }else{
           $scope.personinf = resq;

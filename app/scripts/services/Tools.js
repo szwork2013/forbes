@@ -8,17 +8,11 @@ angular.module('fbs.services')
             $state.go(url,params,options);
         };
         var pageReturn = function(){
-            //$ionicHistory.goBack();
-            //console.log($ionicHistory.viewHistory());
-            //console.log($ionicHistory.backView());
             var retObj = $ionicHistory.backView();
-
-
             if($ionicHistory.backView()){
-                if($state.$current.self.name=== "login"){
+                if($state.$current.self.name == "login"){
                     $state.go("index");
                 }else{
-
                     $state.go(retObj.stateName,retObj.stateParams,options);
                 }
             }else{

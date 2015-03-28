@@ -9,9 +9,10 @@ var app = angular.module('fbs', [
     'fbs.services',
     'shoppinpal.mobile-menu'
 ]);
-app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$resourceProvider){
+app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$resourceProvider,$compileProvider){
     $resourceProvider.defaults.stripTrailingSlashes = false;
     $ionicConfigProvider.views.maxCache(0);
+    //$compileProvider.debugInfoEnabled(false);
     $urlRouterProvider.otherwise('/index');
     $stateProvider.state('login',{
         url: '/login',
@@ -233,13 +234,6 @@ app.controller('appCtrl',function($scope,Tools,$rootScope,$interval){
     $rootScope.hidefooter = false;
     $rootScope.msg_show = false;
     $rootScope.msg_cont = "操作成功";
-    //$interval(function() {
-    //  $rootScope.msg_show = !$rootScope.msg_show;
-    //  console.log("exc...");
-    //},10000,5).then(function(){
-    //  console.log("finished");
-    //  $rootScope.msg_show = !$rootScope.msg_show;
-    //});
 });
 angular.module('fbs.controllers', []);
 angular.module('fbs.services', []);
