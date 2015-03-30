@@ -17,7 +17,7 @@ angular.module('fbs.controllers')
           $scope.loading_show = false;
         });;
 })
-.controller('wendaSingleCtrl', function($scope,$stateParams,DataAPI,Tools) {
+.controller('wendaSingleCtrl', function($rootScope,$scope,$stateParams,$http,DataAPI,Tools) {
     $scope.wendaId = $stateParams.wendaId;
     $scope.reqOptions = {
       action:'getaskdetail',
@@ -25,21 +25,43 @@ angular.module('fbs.controllers')
     };
     $scope.wenda = DataAPI.get($scope.reqOptions);
 
-    //$scope.reply = function(){
-    //    DataAPI.get({
-    //      action:'replyask',
-    //      id:wendaId,
-    //      content:$scope.reply_text
-    //    }).$promise.then(function(resp) {
-    //        if(resp.errcode == 0){
-    //          $scope.reply_text = "";
-    //          Tools.msgShow(resp.errmsg);
-    //        }else{
-    //          console.log(resp.errmsg);
-    //          Tools.msgShow(resp.errmsg);
-    //        }
-    //      });
-    //}
+    $http.jsonp("http://forbes.comeoncloud.net/serv/pubapi.ashx?appid=appid&appsecret=appsecret&action=getaskdetail&id="+$scope.wendaId+"&callback=JSON_CALLBACK")
+    .success(function(data){
+       $rootScope.sharedata.title = data.ask.title;
+       $rootScope.sharedata.imgurl = "http://forbes.comeoncloud.net/customize/forbes/images/t2.png";
+       $rootScope.sharedata.digest = data.ask.content;
+        wx.onMenuShareTimeline({
+            title: $rootScope.sharedata.title, // 分享标题
+            link: location.href, // 分享链接
+            imgUrl: $rootScope.sharedata.imgurl, // 分享图标
+            success: function() {
+                // alert("朋友圈分享成功!!!")
+                sharetype = 7;
+                $rootScope.sharedata.shareSuccess($scope.wendaId,sharetype);
+            },
+            cancel: function() {
+            }
+        });
+
+        wx.onMenuShareAppMessage({
+            title: $rootScope.sharedata.title, // 分享标题
+            desc: $rootScope.sharedata.digest, // 分享描述
+            link: location.href, // 分享链接
+            imgUrl: $rootScope.sharedata.imgurl, // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function() {
+                // alert("好友分享成功!!!")
+                sharetype = 6;
+                $rootScope.sharedata.shareSuccess($scope.wendaId,sharetype);
+            },               
+            cancel: function() {
+            }
+        });
+    })
+    .error(function(error){
+    })
+   
 })
 .controller('wendaAddCtrl', function($scope,$stateParams,$rootScope,DataAPI,Tools) {
       var touserid;
