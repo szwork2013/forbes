@@ -5,11 +5,6 @@ angular.module('fbs.directives')
 .directive('replyWenda', function(DataAPI,Tools) {
     function link(scope, element, attrs) {
         element.bind('click', function() {
-            //console.log(attrs.wendaId);
-            //scope.reqOptions.content = scope.replyBody;
-            //scope.reqOptions.action = scope.replyBody;
-            //console.log(scope.reqOptions);
-            //
             var replyOptions = {
               action:'replyask',
               content:scope.replyBody,

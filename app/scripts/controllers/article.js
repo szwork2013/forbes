@@ -12,13 +12,13 @@ angular.module('fbs.controllers')
       pagesize:10,
       keyword:''
     };
-    $scope.categoryAera = false;
     $scope.ctgListReqOptions = {
       action:'getnewscategorylist',
       pageindex:1,
       pagesize:10
     };
     $scope.pageDatas = {
+      currentCateId:9999,
       categoryList:DataAPI.get($scope.ctgListReqOptions)
     };
     DataAPI.get($scope.articleListReqOptions)

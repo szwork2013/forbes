@@ -9,9 +9,10 @@ var app = angular.module('fbs', [
     'fbs.services',
     'shoppinpal.mobile-menu'
 ]);
-app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$resourceProvider){
+app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$resourceProvider,$compileProvider){
     $resourceProvider.defaults.stripTrailingSlashes = false;
     $ionicConfigProvider.views.maxCache(0);
+    //$compileProvider.debugInfoEnabled(false);
     $urlRouterProvider.otherwise('/index');
     $stateProvider.state('login',{
         url: '/login',

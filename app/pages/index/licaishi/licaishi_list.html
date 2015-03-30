@@ -1,25 +1,23 @@
 <ion-view view-title="理财师列表" hide-footer="true" >
-    <div id="sp-nav">
-      <div class="topcoat-list-container">
-        <ul class="topcoat-list">
-          <li class="item topcoat-list__item" style="height:40px;padding:0"  ng-click="$spMenu.toggle()" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.tagid' req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList'>
+    <div id="sp-nav-1" class="sp-nav">
+      <div class="category_area">
+        <div class="category_title">
+          <i class="iconfont icon-iconfontlicaishi"></i> 分类
+        </div>
+        <ul class="category_list">
+          <li class="category_item" ng-click="$spMenu.toggle('sp-nav-1')" search-by-category current='pageDatas.currentCateId' category-id='9999' req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList' ng-class="{current_item:pageDatas.currentCateId == 9999}">
+            全部
+          </li>
+          <li class="category_item" ng-click="$spMenu.toggle('sp-nav-1')" ng-repeat="category in pageDatas.categoryList.list" search-by-category current='pageDatas.currentCateId' category-id='{{category.tagid}}' req-options = 'lcsListReqOptions' target-datas = 'pageDatas.licaishiList' ng-class="{current_item:pageDatas.currentCateId == category.tagid}">
             {{category.tagname}}
           </li>
-          <!--<li class="topcoat-list__item">Navigation Item 1</li>-->
-          <!--<li class="topcoat-list__item" >Navigation Item 2</li>-->
-          <!--<li class="topcoat-list__item">Navigation Item 3</li>-->
         </ul>
       </div>
     </div>
-    <div class="licaishi_body" id="sp-page">
+    <div class="licaishi_body sp-page">
         <div class="searchHeader">
-            <div class="categorySearch"  ng-click="$spMenu.toggle()">
+            <div class="categorySearch"  ng-click="$spMenu.toggle('sp-nav-1')">
                 <i class="iconfont icon-iconfontliebiao"></i>
-                <!--<div  class="category_list" ng-show="categoryAera">-->
-                    <!--<div class="list">-->
-                        <!---->
-                    <!--</div>-->
-                <!--</div>-->
             </div>
             <div class="searchGroup">
                 <div class="wrap">
@@ -32,7 +30,6 @@
                 </div>
             </div>
         </div>
-
         <div class="list licaishi_list">
             <a class="item" ng-repeat="licaishi in pageDatas.licaishiList.list" ng-click="details(licaishi.userid)">
                 <div class="person_head">
