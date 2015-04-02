@@ -23,12 +23,12 @@ angular.module('fbs.controllers')
         $scope.registData.pwd;
         $scope.registSub = function(){
             DataAPI.get($scope.registData).$promise.then(function(resp) {
+                    console.log(resp)
                     if(resp.errcode == 0){
-                        console.log('注册成功');
+                        alert('注册成功');
                         Tools.pageReturn();
                     }else{
-                        console.log('注册失败');
-                        console.log(resp.errmsg);
+                        alert(resp.errmsg);
                     }
                 });
         };
