@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+@borderLine_color: @default-line-color;
+
+.activity_body{
+  .default-page-bg-init;
+  .activity_list{
+    border: 0;
+    margin: 0 10px;
+  }
+  .activity{
+    border:1px solid @borderLine_color;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    &_logo{
+      width: 100%;
+      img{
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    &_content{
+      @w:70px;
+      padding: 5px;
+      min-height: @w * 1.5;
+      .activity_title{
+        color: #000000;
+        margin: 5px 0;
+        float: left;
+        width: 100%;
+        font-size: 5vw;
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow:ellipsis;
+      }
+      .activity_time,.activity_loc{
+        width: 100%;
+        span{
+          display:inline;
+          font-size: 3.5vw;
+          white-space: normal;
+          color: #a6a6a6;
+        }
+        i{
+          color: @theme-color;
+        }
+        .row{
+          margin: 0;
+          padding: 0;
+        }
+        .col{
+          padding: 0;
+        }
+        .col-10{
+          margin-right: -4%;
+        }
+      }
+      .activity_loc{
+        margin-bottom: 5px;
+      }
+      .activity_status{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .triangle{
+          width: 0;
+          height: 0;
+          border-bottom: @w solid #3ec381;
+          border-left: @w solid transparent;
+        }
+        &_over{
+          width: 0;
+          height: 0;
+          border-bottom: @w solid #a6a6a6;
+          border-left: @w solid transparent;
+        }
+        p{
+          font-size:3.0vw;
+          position: absolute;
+          bottom: 2vw;
+          right: 1vw;
+          z-index: 999;
+          color: white;
+        }
+      }
+      .activity_tags{
+        float: left;
+        margin-top: 10px;
+        .test_border;
+      }
+    }
+    &_jf{
+      position: absolute;
+      top:0 ;right: 0;
+      z-index: 999;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      background-color: rgba(95, 91, 91, 0.49);
+    }
+  }
+}
+

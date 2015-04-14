@@ -1,0 +1,106 @@
+<ion-view view-title="个人中心" hide-footer="false">
+    <ion-content>
+        <div class="grzx_body">
+            <div class="person_main" ng-show="personinf.headimg != null">
+                <div class="person_head">
+                    <div class="head_img">
+                        <img ng-src="{{personinf.headimg}}" />
+                    </div>
+                </div>
+                <div class="person_intro">
+                    <div class="person_name">
+                        {{personinf.truename}}{{islogin.islogin}}
+                    </div>
+                    <div class="person_brief">
+                        {{personinf.company}}
+                    </div>
+                    <div class="applyToLcs">
+                        申请理财师
+                    </div>
+                </div>
+                <div class="person_more">
+                    <a class="update_intro" href="#/gxzl">
+                        <i class="iconfont icon-you"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="login_box" ng-show="personinf.headimg == null">
+                <a href="#/login" class="login_btn" >登录</a>
+            </div>
+            <div class="person_rels">
+                <div class="list">
+                    <a class="item" href="#/wdjf">
+                        <div class="item_icon jf">
+                            <i class="iconfont icon-iconfontjifenqia"></i>
+                        </div>
+                        <div class="item_context">
+                            我的积分
+                        </div>
+                        <div class="item_more">
+                            {{personinf.totalscore}}<i class="iconfont icon-you"></i>
+                        </div>
+                    </a>
+                    <a class="item" ng-click="redir('wd_list','my')">
+                        <div class="item_icon wt">
+                            <i class="iconfont icon-iconfontjifenqia"></i>
+                        </div>
+                        <div class="item_context">
+                            我的问题
+                        </div>
+                        <div class="item_more">
+                             <i class="iconfont icon-you"></i>
+                        </div>
+                    </a>
+                    <a class="item" ng-click="redir('activity_list','my')">
+                        <div class="item_icon hd">
+                            <i class="iconfont icon-iconfonthuodong"></i>
+                        </div>
+                        <div class="item_context">
+                            活动
+                        </div>
+                        <div class="item_more">
+                            <i class="iconfont icon-you"></i>
+                        </div>
+                    </a>
+                    <a class="item" ng-click="redir('wjlb','my')">
+                        <div class="item_icon wj">
+                            <i class="iconfont icon-iconfontwenda"></i>
+                        </div>
+                        <div class="item_context">
+                            问卷
+                        </div>
+                        <div class="item_more">
+                            <i class="iconfont icon-you"></i>
+                        </div>
+                    </a>
+                    <div style="margin-top: 50px;"></div>
+                    <a class="item" ng-click="redir('licaishi_list','myatt')">
+
+                        <div class="item_icon gz">
+                            <i class="iconfont icon-iconfontguanzhu"></i>
+                        </div>
+                        <div class="item_context">
+                            我关注的人
+                        </div>
+                        <div class="item_more">
+                             <i class="iconfont icon-you"></i>
+                        </div>
+                    </a>
+                    <a class="item" ng-click="redir('licaishi_list','myfans')">
+                        <div class="item_icon gz">
+                            <i class="iconfont icon-iconfontguanzhu"></i>
+                        </div>
+                        <div class="item_context">
+                            关注我的人
+                        </div>
+                        <div class="item_more">
+                            <i class="iconfont icon-you"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
+

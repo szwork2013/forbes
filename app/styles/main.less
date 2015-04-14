@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+.rollback{
+  @w:50px;
+  background-color:@theme-color;
+  width: @w;
+  height: @w;
+  line-height: @w;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 999;
+  bottom: 50px;
+  left: 5px;
+  position: absolute;
+  color: white;
+  .iconfont{
+    font-size: 34px;
+    position: relative;
+    left: -1px;
+  }
+}
+.main_footer_tabs{
+  .tab-item{
+    margin-top: -2px;
+    .icon{
+      .test_border;
+      font-size: 22px;
+      padding-top: 10px;
+    }
+    font-size: 12px;
+  }
+  .active{
+    color: @theme-color;
+  }
+}

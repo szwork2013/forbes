@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+.xx_body{
+  .default-page-bg-init;
+  .list{
+    .item {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      width: 96%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 5px;
+      margin-top: 10px;
+      height: 58px;
+      border: 1px solid @default-line-color;
+      .logo{
+        height:40px;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        float: left;
+        margin:9px 10px auto 10px;
+        border-radius: 50%;
+        .iconfont{
+          font-size: 24px;
+          color: white;
+        }
+      }
+      .text{
+        float: left;
+        font-size: 14px;
+        margin-top: 9px;
+        .test_border;
+        .subText{
+          font-size: 10px;
+          color: @default-line-color;
+        }
+      }
+      .xt{
+        background-color: rgba(198, 174, 148, 1);
+      }
+      .wj{
+        background-color: rgba(99, 171, 212, 1);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,115 @@
+<!doctype html>
+<html ng-app="fbs" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>福布斯</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1427036515_2076218.css"/>
+    <!-- build:css(.) styles/modules.css -->
+    <link rel="stylesheet" href="bower_components/ionic/css/ionic.css">
+    <link rel="stylesheet" href="bower_components/angular/angular-csp.css">
+    <!--<link rel="stylesheet" href="bower_components/ng-mobile-menu-master/demo/topcoat/css/topcoat-mobile-light.min.css">-->
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/activity.css">
+    <link rel="stylesheet" href="styles/activity_single.css">
+    <link rel="stylesheet" href="styles/article.css">
+    <link rel="stylesheet" href="styles/article_single.css">
+    <link rel="stylesheet" href="styles/commen.css">
+    <link rel="stylesheet" href="styles/fx.css">
+    <link rel="stylesheet" href="styles/grzx.css">
+    <link rel="stylesheet" href="styles/gxzl.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/jfph.css">
+    <link rel="stylesheet" href="styles/jfsc.css">
+    <link rel="stylesheet" href="styles/lcs.css">
+    <link rel="stylesheet" href="styles/lcs_apply.css">
+    <link rel="stylesheet" href="styles/lcs_unapply.css">
+    <link rel="stylesheet" href="styles/lcs_history.css">
+    <link rel="stylesheet" href="styles/licaishi.css">
+    <link rel="stylesheet" href="styles/licaishi_single.css">
+    <link rel="stylesheet" href="styles/login&regist.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/wd.css">
+    <link rel="stylesheet" href="styles/wd_add.css">
+    <link rel="stylesheet" href="styles/wd_single.css">
+    <link rel="stylesheet" href="styles/wdjf.css">
+    <link rel="stylesheet" href="styles/wj.css">
+    <link rel="stylesheet" href="styles/wj_list.css">
+    <link rel="stylesheet" href="styles/xx.css">
+    <link rel="stylesheet" href="styles/ng-mobile-menu.css">
+  <!-- endbuild -->
+    <!-- build:js(.) scripts/vendor.js -->
+    <!--<script src="../bower_components/ionic/release/js/ionic.bundle.js"></script>-->
+    <script src="bower_components/ionic/js/ionic.bundle.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script  src="bower_components/angular-mobile-layout/release/angular-mobile-layout.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/ng-mobile-menu.js"></script>
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/pageList.js"></script>
+    <script src="scripts/controllers/activity.js"></script>
+    <script src="scripts/controllers/article.js"></script>
+    <script src="scripts/controllers/wenda.js"></script>
+    <script src="scripts/controllers/licaishi.js"></script>
+    <script src="scripts/controllers/faxian.js"></script>
+    <script src="scripts/controllers/xiaoxi.js"></script>
+    <script src="scripts/controllers/person.js"></script>
+    <script src="scripts/controllers/sign.js"></script>
+    <script src="scripts/services/DataAPI.js"></script>
+    <script src="scripts/services/Tools.js"></script>
+    <script src="scripts/services/AtteLcs.js"></script>
+    <script src="scripts/filters/activity.js"></script>
+    <script src="scripts/filters/msgType.js"></script>
+    <script src="scripts/filters/lcsAttention.js"></script>
+    <script src="scripts/filters/articleCatFilter.js"></script>
+    <script src="scripts/filters/articleFilter.js"></script>
+    <script src="scripts/directive/operateFooter.js"></script>
+    <script src="scripts/directive/searchByKeyword.js"></script>
+    <script src="scripts/directive/searchByCategory.js"></script>
+    <script src="scripts/directive/addMoreList.js"></script>
+    <script src="scripts/directive/sentYzm.js"></script>
+    <script src="scripts/directive/lcsHistory.js"></script>
+    <script src="scripts/directive/replyWenda.js"></script>
+    <!-- endbuild -->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body ng-controller="appCtrl" ng-cloak>
+    <ion-nav-view name="mainContent" class="main_view">
+    </ion-nav-view>
+    <div class="rollback" ng-click="rollback()" ng-hide="!hideFooter">
+        <i class="iconfont icon-fanhui2"></i>
+    </div>
+    <!--<ion-footer-bar style="padding: 0px;" class="animate-hide" ng-hide="$root.hideTabs">-->
+    <ion-footer-bar style="padding: 0px;" class="animate-hide" ng-hide="hideFooter">
+        <div class="tabs tabs-icon-top main_footer_tabs">
+            <!--<a class="tab-item" nav-direction="back" href="#/index" ng-click="tt()">-->
+            <a class="tab-item " nav-direction="enter" href="#/index" ng-click="selectTab(1)" ng-class="{active:isSelected(1)}">
+                <i class="icon iconfont icon-iconfontshouye "></i>
+                首页
+            </a>
+            <a class="tab-item" nav-direction="enter" href="#/fx" ng-click="selectTab(2)" ng-class="{active:isSelected(2)}">
+                <i class="icon iconfont icon-iconfontfaxian"></i>
+                发现
+            </a>
+            <a class="tab-item" nav-direction="enter" href="#/xx" ng-click="selectTab(3)" ng-class="{active:isSelected(3)}">
+                <i class="icon iconfont icon-iconfontxiaoxi"></i>
+                消息
+            </a>
+            <a class="tab-item" nav-direction="enter" href="#/grzx" ng-click="selectTab(4)" ng-class="{active:isSelected(4)}">
+                <i class="icon iconfont icon-wode"></i>
+                我的
+            </a>
+        </div>
+    </ion-footer-bar>
+    <div class="operate_msg" ng-show="msg_show">
+      {{msg_cont}}
+    </div>
+</body>
+</html>
+

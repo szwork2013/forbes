@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import "dev/test";
+@import "dev/util";
+@import "dev/theme";
+.wjlb_body{
+  .default-page-bg-init;
+  .list{
+    .item {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      width: 96%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 5px;
+      margin-top: 2vw;
+      height: 8vh;
+      min-height: 50px;
+
+      border: 1px solid @default-line-color;
+      .logo{
+        height:6vh;
+        line-height: 6vh;
+        text-align: center;
+        width: 6vh;
+        float: left;
+        margin: 1vh 2vh;
+        border-radius: 50%;
+        .iconfont{
+          font-size: 3vh;
+          color: white;
+        }
+      }
+      .text{
+        float: left;
+        font-size: 14px;
+        margin-top: 1vh;
+        .test_border;
+        .subText{
+          font-size: 10px;
+        }
+      }
+      .xt{
+        background-color: rgba(129, 99, 29, 0.73);
+      }
+      .wj{
+        background-color: rgba(50, 135, 199, 0.73);
+      }
+    }
+  }
+}
