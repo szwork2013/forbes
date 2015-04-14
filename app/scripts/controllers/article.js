@@ -5,7 +5,6 @@ angular.module('fbs.controllers')
         Tools.pageSkip('article_single',{newsid : newsid});
     };
     $scope.loading_show = true;
-    $scope.loading_show = true;
     $scope.articleListReqOptions = {
       action:'getnewslist',
       pageindex:1,
@@ -76,7 +75,7 @@ angular.module('fbs.controllers')
     })
     .error(function(){
     });
-    
+
     wx.ready(function(){
 
         wx.onMenuShareTimeline({
@@ -130,7 +129,7 @@ angular.module('fbs.controllers')
       $http.jsonp("http://forbes.comeoncloud.net/serv/pubapi.ashx?appid=appid&appsecret=appsecret&action=weixinsharecomplete&sharetype="+sharetype+"&id="+id+"&callback=JSON_CALLBACK")
         .success(function(data){
            // alert("yes:"+data.errcode)
-           // alert("yes:"+data.errmsg) 
+           // alert("yes:"+data.errmsg)
         })
         .error(function(error){
            // alert("no:"+data.errcode)
@@ -139,10 +138,10 @@ angular.module('fbs.controllers')
         })
 
         // alert("end....")
-     
+
    }
 
-   
+
 
 
 

@@ -11,13 +11,13 @@ angular.module('fbs.services')
                 action:'cancelattention',
                 touserid:licaishi.userid
               }).$promise.then(function(resp) {
+                  console.log(resp.errcode);
                   if(resp.errcode == 0){
                     console.log("取消关注成功");
                     licaishi.isattention = !licaishi.isattention;
                   }else if(resp.errcode == 1){
                     console.log("取消关注失败");
                   }else if(resp.errcode == -1){
-                    //console.log("尚未登录");
                     Tools.msgShow("尚未登录");
                   }else if(resp.errcode == 2){
                     console.log("已经关注过了");
@@ -34,8 +34,7 @@ angular.module('fbs.services')
                     licaishi.isattention = !licaishi.isattention;
                   }else if(resp.errcode == 1){
                     console.log("关注失败");
-                  }else{
-                    console.log("尚未登录");
+                  }else if(resp.errcode == -1){
                     Tools.msgShow("尚未登录");
                   }
                 });
