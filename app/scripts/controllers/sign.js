@@ -10,7 +10,7 @@ angular.module('fbs.controllers')
                 if(resp.issuccess){
                     Tools.pageReturn();
                 }else{
-                    console.log(resp.message);
+                    alert(resp.message);
                 }
             });
         };
