@@ -54,14 +54,14 @@ angular.module('fbs.controllers')
                 // alert("好友分享成功!!!")
                 sharetype = 6;
                 $rootScope.sharedata.shareSuccess($scope.wendaId,sharetype);
-            },               
+            },
             cancel: function() {
             }
         });
     })
     .error(function(error){
     })
-   
+
 })
 .controller('wendaAddCtrl', function($scope,$stateParams,$rootScope,DataAPI,Tools) {
       var touserid;
@@ -77,10 +77,13 @@ angular.module('fbs.controllers')
                 touserid:touserid
             }).$promise.then(function(resp) {
                 if(resp.errcode == 0){
+                    Tools.msgShow(resp.errmsg);
                     Tools.pageSkip('wd_list', {operat:'all'});
-                }else{
+                }else if(resp.errcode == 1){
                     Tools.msgShow("请登录");
                     Tools.pageSkip('login',null);
+                }else if(resp.errcode == 2){
+                    Tools.msgShow(resp.errmsg);
                 }
             });
         }

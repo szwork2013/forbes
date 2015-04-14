@@ -10,7 +10,10 @@ angular.module('fbs.controllers')
                 if(resp.issuccess){
                     Tools.pageReturn();
                 }else{
-                    console.log(resp.message);
+                    Tools.msgShow(resp.message);
+                    $scope.signInData.userid = "";
+                    $scope.signInData.pwd = "";
+                    console.log(Tools.isLogin());
                 }
             });
         };
