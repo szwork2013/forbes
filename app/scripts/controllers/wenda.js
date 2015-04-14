@@ -79,7 +79,7 @@ angular.module('fbs.controllers')
                 if(resp.errcode == 0){
                     Tools.msgShow(resp.errmsg);
                     Tools.pageSkip('wd_list', {operat:'all'});
-                }else if(resp.errcode == 1){
+                }else if(resp.errcode == -2){
                     Tools.msgShow("请登录");
                     Tools.pageSkip('login',null);
                 }else if(resp.errcode == 2){

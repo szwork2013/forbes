@@ -1,5 +1,7 @@
-node_modules
 .tmp
 .sass-cache
+node_modules
+dist
 bower_components
+test
 npm-debug.log
