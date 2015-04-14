@@ -39,7 +39,7 @@ angular.module('fbs.controllers')
             AtteLcs.atte(licaishi);
         };
 })
-.controller('licaishiSingleCtrl',function($rootScope,$scope,Tools,$stateParams,$http,DataAPI,AtteLcs) {
+.controller('licaishiSingleCtrl',function($scope,Tools,$stateParams,DataAPI,AtteLcs) {
     var licaishiId = $stateParams.licaishiId;
     $scope.licaishi = DataAPI.get({
         action : 'getmasterdetail',
@@ -51,44 +51,6 @@ angular.module('fbs.controllers')
     $scope.atteLcs = function (licaishi) {
       AtteLcs.atte(licaishi);
     };
-
-    $http.jsonp("http://forbes.comeoncloud.net/serv/pubapi.ashx?appid=appid&appsecret=appsecret&action=getmasterdetail&userid="+licaishiId+"&callback=JSON_CALLBACK")
-    .success(function(data){
-       $rootScope.sharedata.title = data.truename;
-       $rootScope.sharedata.imgurl = data.headimg;
-       $rootScope.sharedata.digest = data.digest;
-        wx.onMenuShareTimeline({
-            title: $rootScope.sharedata.title, // 分享标题
-            link: location.href, // 分享链接
-            imgUrl: $rootScope.sharedata.imgurl, // 分享图标
-            success: function() {
-                // alert("朋友圈分享成功!!!")
-                sharetype = 5;
-                $rootScope.sharedata.shareSuccess(licaishiId,sharetype);
-            },
-            cancel: function() {
-            }
-        });
-
-        wx.onMenuShareAppMessage({
-            title: $rootScope.sharedata.title, // 分享标题
-            desc: $rootScope.sharedata.digest, // 分享描述
-            link: location.href, // 分享链接
-            imgUrl: $rootScope.sharedata.imgurl, // 分享图标
-            type: '', // 分享类型,music、video或link，不填默认为link
-            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-            success: function() {
-                // alert("好友分享成功!!!")
-                sharetype = 4;
-                $rootScope.sharedata.shareSuccess(licaishiId,sharetype);
-            },
-            cancel: function() {
-            }
-        });
-    })
-    .error(function(error){
-    })
-
 })
 .controller('licaishiOtherCtrl',function($scope,$http,DataAPI,Tools) {
     DataAPI.get({

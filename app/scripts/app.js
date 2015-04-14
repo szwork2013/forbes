@@ -13,6 +13,7 @@ app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$reso
     $resourceProvider.defaults.stripTrailingSlashes = false;
     $ionicConfigProvider.views.maxCache(0);
     //$compileProvider.debugInfoEnabled(false);
+   
     $urlRouterProvider.otherwise('/index');
     $stateProvider.state('login',{
         url: '/login',
