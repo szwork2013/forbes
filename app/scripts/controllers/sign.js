@@ -13,7 +13,6 @@ angular.module('fbs.controllers')
                     Tools.msgShow(resp.message);
                     $scope.signInData.userid = "";
                     $scope.signInData.pwd = "";
-                    console.log(Tools.isLogin());
                 }
             });
         };
