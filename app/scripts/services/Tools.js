@@ -27,9 +27,13 @@ angular.module('fbs.services')
               $rootScope.msg_show = false;
             }, 3000);
         };
+        var isLogin = function(){
+            return true;
+        }
         return {
             pageSkip:pageSkip,
             pageReturn:pageReturn,
-            msgShow:msgShow
+            msgShow:msgShow,
+            isLogin:isLogin
         };
 });
