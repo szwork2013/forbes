@@ -220,7 +220,7 @@ app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider,$reso
         }
     });
 });
-app.controller('appCtrl',function($scope,Tools,$rootScope,$interval){
+app.controller('appCtrl',function($scope,Tools,$rootScope,$interval,$http){
     $scope.format = 'M/d/yy h:mm:ss a';
     $scope.tab = 1;
     $scope.selectTab = function(setTab){
@@ -235,6 +235,47 @@ app.controller('appCtrl',function($scope,Tools,$rootScope,$interval){
     $rootScope.hidefooter = false;
     $rootScope.msg_show = false;
     $rootScope.msg_cont = "操作成功";
+    //$interval(function() {
+    //  $rootScope.msg_show = !$rootScope.msg_show;
+    //  console.log("exc...");
+    //},10000,5).then(function(){
+    //  console.log("finished");
+    //  $rootScope.msg_show = !$rootScope.msg_show;
+    //});
+    $rootScope.sharedata={
+        title:"",
+        imgurl:"",
+        digest:"",
+        shareSuccess:function(id,sharetype){
+            // alert(id)
+            // alert(sharetype)
+              $http.jsonp("http://forbes.comeoncloud.net/serv/pubapi.ashx?appid=appid&appsecret=appsecret&action=weixinsharecomplete&sharetype="+sharetype+"&id="+id+"&callback=JSON_CALLBACK")
+                .success(function(data){ 
+                    // alert("success")
+                })
+                .error(function(error){
+                })
+          }
+    }
+
+   $http.get("http://" + location.host + "/serv/wxapi.ashx?action=getjsapiconfig&url="+location.href)
+       .success(function(wxapidata){
+            wx.config({
+                debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                appId: wxapidata.appId, // 必填，公众号的唯一标识
+                timestamp: wxapidata.timestamp, // 必填，生成签名的时间戳
+                nonceStr: wxapidata.nonceStr, // 必填，生成签名的随机串
+                signature:  wxapidata.signature,// 必填，签名，见附录1
+                jsApiList: [
+                    "onMenuShareTimeline",
+                    "onMenuShareAppMessage",
+                    "onMenuShareQQ"
+                ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+            });
+       })
+      .error(function(){
+       });
+
 });
 angular.module('fbs.controllers', []);
 angular.module('fbs.services', []);
