@@ -33,6 +33,8 @@ angular.module('fbs.controllers')
   var imgurl = "";
   var digest = "";
   var sharetype = 0;
+
+  // alert("欢迎关注创富荟")
   $http.jsonp("http://forbes.comeoncloud.net/serv/pubapi.ashx?appid=appid&appsecret=appsecret&action=getnewsdetail&newsid="+articleId+"&callback=JSON_CALLBACK")
         .success(function(data){
            title = data.title;
@@ -49,6 +51,7 @@ angular.module('fbs.controllers')
     $scope.SkipValidation = function(value) {
         return $sce.trustAsHtml(value);
     };
+  // alert("关注创富荟")
 
 
 

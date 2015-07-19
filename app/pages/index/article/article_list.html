@@ -31,7 +31,12 @@
             </div>
           </div>
           <div class="list article_list">
-              <a class="item" ng-repeat="article in pageDatas.articleList.list | articleFilter" ng-click="details(article.newsid)">
+              <a 
+              class="item" 
+              ng-repeat="article in pageDatas.articleList.list | articleFilter" 
+              ui-sref="article_single({newsid:article.newsid})"
+              >
+              <!-- ng-click="details(article.newsid)" -->
                   <div class="article_context item-text-wrap">
                       <div class="article_title">
                           {{article.title}}
