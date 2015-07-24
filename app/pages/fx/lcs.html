@@ -1,9 +1,22 @@
 <ion-view view-title="优选理财师" hide-footer="true">
     <ion-content>
-        <div class="lcs_body">
-            <div class="lcs_int" ng-bind-html="SkipValidation(pxintro.newscontent)">
+      <div class="article_single_body">
+        <div class="article_context">
+          <div class="article_title">
+            {{article.title}}
+          </div>
+          <div class="article_rels">
+            <div class="tag pv" ng-show="article.pv">
+              <i class="iconfont icon-iconfontchakan"></i> {{article.pv}}
             </div>
+            <div class="article_date">
+              {{article.time | date : 'yyyy-MM-dd'}}
+            </div>
+          </div>
+          <div class="article_details" ng-bind-html="SkipValidation(article.newscontent)">
+          </div>
         </div>
+      </div>
     </ion-content>
 </ion-view>
 <ion-footer-bar>
@@ -11,7 +24,7 @@
         <div class="row">
             <div class="col col-50">
                 <a href="#/lcs_history">
-                    <div class="operator_btn lcs_history" >
+                    <div class="operator_btn lcs_history">
                         往届资料
                     </div>
                 </a>
@@ -25,4 +38,6 @@
             </div>
         </div>
     </div>
+  </div>
 </ion-footer-bar>
+

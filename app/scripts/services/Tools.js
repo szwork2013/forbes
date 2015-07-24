@@ -8,12 +8,13 @@ angular.module('fbs.services')
             $state.go(url,params,options);
         };
         var pageReturn = function(){
-            //$ionicHistory.goBack();
-            //console.log($ionicHistory.viewHistory());
-            //console.log($ionicHistory.backView());
             var retObj = $ionicHistory.backView();
             if($ionicHistory.backView()){
-                $state.go(retObj.stateName,retObj.stateParams,options);
+                if($state.$current.self.name == "login"){
+                    $state.go("index");
+                }else{
+                    $state.go(retObj.stateName,retObj.stateParams,options);
+                }
             }else{
                 //页面刷新后返回按钮无效  统一回首页
                 $state.go("index");
@@ -26,9 +27,13 @@ angular.module('fbs.services')
               $rootScope.msg_show = false;
             }, 3000);
         };
+        var isLogin = function(){
+            return true;
+        }
         return {
             pageSkip:pageSkip,
             pageReturn:pageReturn,
-            msgShow:msgShow
+            msgShow:msgShow,
+            isLogin:isLogin
         };
 });

@@ -2,19 +2,17 @@ angular.module('fbs.controllers')
 .controller('signCtrl',function($scope,DataAPI,Tools,$cookieStore) {
         $scope.signInData = {};
         $scope.signInData.action = "login";
-        $scope.signInData.userid = "forbesuser1";
-        $scope.signInData.pwd = "123456";
+        $scope.signInData.userid = "";
+        $scope.signInData.pwd = "";
         $scope.login = function(){
             DataAPI.get($scope.signInData).$promise.then(function(resp) {
                 console.log(resp);
                 if(resp.issuccess){
                     Tools.pageReturn();
-                //  setCookie
-                    var loginUser = {};
-                    loginUser.userId = resp.userid;
-                    $cookieStore.put('loginUser',loginUser);
                 }else{
-                    console.log(resp.message);
+                    Tools.msgShow(resp.message);
+                    $scope.signInData.userid = "";
+                    $scope.signInData.pwd = "";
                 }
             });
         };
@@ -23,16 +21,16 @@ angular.module('fbs.controllers')
         };
         $scope.registData = {};
         $scope.registData.action  = 'reg';
-        $scope.registData.phone  = 18573619055;
-        $scope.registData.pwd  = '123';
+        $scope.registData.phone;
+        $scope.registData.pwd;
         $scope.registSub = function(){
             DataAPI.get($scope.registData).$promise.then(function(resp) {
+                    console.log(resp)
                     if(resp.errcode == 0){
-                        console.log('注册成功');
+                        alert('注册成功');
                         Tools.pageReturn();
                     }else{
-                        console.log('注册失败');
-                        console.log(resp.errmsg);
+                        alert(resp.errmsg);
                     }
                 });
         };

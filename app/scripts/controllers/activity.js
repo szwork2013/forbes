@@ -18,13 +18,13 @@ angular.module('fbs.controllers')
           pagesize:10,
           keyword:''
         };
-        $scope.categoryAera = false;
         $scope.ctgListReqOptions = {
           action:'getactivitycategorylist',
           pageindex:1,
           pagesize:10
         };
         $scope.pageDatas = {
+          currentCateId:9999,
           categoryList:DataAPI.get($scope.ctgListReqOptions)
         };
         DataAPI.get($scope.activityListReqOptions)
@@ -34,8 +34,9 @@ angular.module('fbs.controllers')
           });
 
 })
-.controller('activitySingleCtrl', function($scope,$stateParams,$location,$ionicScrollDelegate,$sce,DataAPI) {
+.controller('activitySingleCtrl', function($rootScope,$scope,$stateParams,$location,$ionicScrollDelegate,$sce,DataAPI,$http) {
         var activityId = $stateParams.activityId;
+        var sharetype = 0;
         $scope.activity = DataAPI.get({
             action:'getactivitydetail',
             activityid:activityId
@@ -53,12 +54,48 @@ angular.module('fbs.controllers')
         };
 
         $scope.apply_data = {"activityid":activityId,"action":"submitactivitysigndata"};
-        //$scope.online_apply = DataAPI.get($scope.apply_data);
-        //$scope.apply_data = {};
         $scope.online_apply = function(){
             DataAPI.get($scope.apply_data);
         }
-    });
+
+        $http.jsonp("http://forbes.comeoncloud.net/serv/pubapi.ashx?appid=appid&appsecret=appsecret&action=getactivitydetail&activityid="+activityId+"&callback=JSON_CALLBACK")
+            .success(function(data){
+               $rootScope.sharedata.title = data.activityname;
+               $rootScope.sharedata.imgurl = data.activityimage;
+               $rootScope.sharedata.digest = data.activitycontent;
+                wx.onMenuShareTimeline({
+                    title: $rootScope.sharedata.title, // 分享标题
+                    link: location.href, // 分享链接
+                    imgUrl: $rootScope.sharedata.imgurl, // 分享图标
+                    success: function() {
+                        // alert("朋友圈分享成功!!!")
+                        sharetype = 3;
+                        $rootScope.sharedata.shareSuccess(activityId,sharetype);
+                    },
+                    cancel: function() {
+                    }
+                });
+
+                wx.onMenuShareAppMessage({
+                    title: $rootScope.sharedata.title, // 分享标题
+                    desc: $rootScope.sharedata.digest, // 分享描述
+                    link: location.href, // 分享链接
+                    imgUrl: $rootScope.sharedata.imgurl, // 分享图标
+                    type: '', // 分享类型,music、video或link，不填默认为link
+                    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                    success: function() {
+                        // alert("好友分享成功!!!")
+                        sharetype = 2;
+                        $rootScope.sharedata.shareSuccess(activityId,sharetype);
+                    },
+                    cancel: function() {
+                    }
+                });
+            })
+            .error(function(error){
+            })
+
+});
 
 
 

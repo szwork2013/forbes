@@ -17,6 +17,7 @@
     padding: 0;
     width: 100%;
     margin-bottom: 10px;
+    position: relative;
     &_logo{
       width: 100%;
       img{
@@ -35,6 +36,8 @@
         width: 100%;
         font-size: 5vw;
         font-weight: 600;
+        overflow: hidden;
+        text-overflow:ellipsis;
       }
       .activity_time,.activity_loc{
         width: 100%;
@@ -72,7 +75,10 @@
           border-left: @w solid transparent;
         }
         &_over{
+          width: 0;
+          height: 0;
           border-bottom: @w solid #a6a6a6;
+          border-left: @w solid transparent;
         }
         p{
           font-size:3.0vw;
@@ -88,6 +94,18 @@
         margin-top: 10px;
         .test_border;
       }
+    }
+    &_jf{
+      position: absolute;
+      top:0 ;right: 0;
+      z-index: 999;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      background-color: rgba(95, 91, 91, 0.49);
     }
   }
 }

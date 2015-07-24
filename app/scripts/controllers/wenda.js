@@ -17,15 +17,54 @@ angular.module('fbs.controllers')
           $scope.loading_show = false;
         });;
 })
-.controller('wendaSingleCtrl', function($scope,$stateParams,DataAPI) {
-    var wendaId = $stateParams.wendaId;
-    $scope.wenda = DataAPI.get({
-        action:'getaskdetail',
-        id:wendaId
-    });
+.controller('wendaSingleCtrl', function($rootScope,$scope,$stateParams,$http,DataAPI,Tools) {
+    $scope.wendaId = $stateParams.wendaId;
+    $scope.reqOptions = {
+      action:'getaskdetail',
+      id:$scope.wendaId
+    };
+    $scope.wenda = DataAPI.get($scope.reqOptions);
+
+    $http.jsonp("http://forbes.comeoncloud.net/serv/pubapi.ashx?appid=appid&appsecret=appsecret&action=getaskdetail&id="+$scope.wendaId+"&callback=JSON_CALLBACK")
+    .success(function(data){
+       $rootScope.sharedata.title = data.ask.title;
+       $rootScope.sharedata.imgurl = "http://forbes.comeoncloud.net/customize/forbes/images/t2.png";
+       $rootScope.sharedata.digest = data.ask.content;
+        wx.onMenuShareTimeline({
+            title: $rootScope.sharedata.title, // 分享标题
+            link: location.href, // 分享链接
+            imgUrl: $rootScope.sharedata.imgurl, // 分享图标
+            success: function() {
+                // alert("朋友圈分享成功!!!")
+                sharetype = 7;
+                $rootScope.sharedata.shareSuccess($scope.wendaId,sharetype);
+            },
+            cancel: function() {
+            }
+        });
+
+        wx.onMenuShareAppMessage({
+            title: $rootScope.sharedata.title, // 分享标题
+            desc: $rootScope.sharedata.digest, // 分享描述
+            link: location.href, // 分享链接
+            imgUrl: $rootScope.sharedata.imgurl, // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function() {
+                // alert("好友分享成功!!!")
+                sharetype = 6;
+                $rootScope.sharedata.shareSuccess($scope.wendaId,sharetype);
+            },
+            cancel: function() {
+            }
+        });
+    })
+    .error(function(error){
+    })
+
 })
 .controller('wendaAddCtrl', function($scope,$stateParams,$rootScope,DataAPI,Tools) {
-        var touserid;
+      var touserid;
         if($stateParams.touserid != 'none'){
             touserid = $stateParams.touserid
         }
@@ -38,17 +77,19 @@ angular.module('fbs.controllers')
                 touserid:touserid
             }).$promise.then(function(resp) {
                 if(resp.errcode == 0){
-                    console.log("话题添加成功");
+                    Tools.msgShow(resp.errmsg);
                     Tools.pageSkip('wd_list', {operat:'all'});
-                }else if(resp.errcode == 1){
-                    console.log("尚未登录");
+                }else if(resp.errcode == -2){
                     Tools.msgShow("请登录");
                     Tools.pageSkip('login',null);
+                }else if(resp.errcode == 2){
+                    Tools.msgShow(resp.errmsg);
                 }
             });
         }
         $scope.cancelAdd = function(){
             console.log('取消话题添加');
+            Tools.msgShow("请登录");
             Tools.pageReturn();
         }
 });

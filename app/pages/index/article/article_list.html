@@ -1,16 +1,23 @@
 <ion-view view-title="文章列表" hide-footer="true">
-    <ion-content>
-        <div class="article_body">
+        <div class="sp-nav" id="sp-nav-2">
+          <div class="category_area">
+            <div class="category_title">
+              <i class="iconfont icon-iconfontlicaishi"></i> 分类
+            </div>
+            <ul class="category_list">
+              <li class="category_item" ng-click="$spMenu.toggle('sp-nav-2')" search-by-category current='pageDatas.currentCateId' category-id='9999' req-options = 'articleListReqOptions' target-datas = 'pageDatas.articleList' ng-class="{current_item:pageDatas.currentCateId == 9999}">
+                全部
+              </li>
+              <li class="category_item" ng-click="$spMenu.toggle('sp-nav-2')" ng-repeat="category in pageDatas.categoryList.list | articleCatFilter" search-by-category current='pageDatas.currentCateId' category-id='{{category.categoryid}}' req-options = 'articleListReqOptions' target-datas = 'pageDatas.articleList' ng-class="{current_item:pageDatas.currentCateId == category.categoryid}">
+                {{category.categoryname}}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="article_body sp-page">
           <div class="searchHeader">
-            <div class="categorySearch" ng-click="categoryAera = !categoryAera">
+            <div class="categorySearch" ng-click="$spMenu.toggle('sp-nav-2')" >
               <i class="iconfont icon-iconfontliebiao"></i>
-              <div  class="category_list" ng-show="categoryAera">
-                <div class="list">
-                  <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.categoryid' req-options = 'articleListReqOptions' target-datas = 'pageDatas.articleList'>
-                    {{category.categoryname}}
-                  </a>
-                </div>
-              </div>
             </div>
             <div class="searchGroup">
               <div class="wrap">
@@ -24,7 +31,12 @@
             </div>
           </div>
           <div class="list article_list">
-              <a class="item" ng-repeat="article in pageDatas.articleList.list" ng-click="details(article.newsid)">
+              <a 
+              class="item" 
+              ng-repeat="article in pageDatas.articleList.list | articleFilter" 
+              ui-sref="article_single({newsid:article.newsid})"
+              >
+              <!-- ng-click="details(article.newsid)" -->
                   <div class="article_context item-text-wrap">
                       <div class="article_title">
                           {{article.title}}
@@ -55,5 +67,4 @@
             </div>
           </div>
         </div>
-    </ion-content>
 </ion-view>

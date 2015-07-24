@@ -10,7 +10,6 @@ angular.module('fbs.controllers')
             actionsUrl = 'getmasterlist';
         }
         $scope.loading_show = true;
-
         $scope.lcsListReqOptions = {
             action:actionsUrl,
             pageindex:1,
@@ -18,13 +17,13 @@ angular.module('fbs.controllers')
             sort:'time',
             keyword:''
         };
-        $scope.categoryAera = false;
         $scope.ctgListReqOptions = {
             action:'getmastertaglist',
             pageindex:1,
             pagesize:10
         };
         $scope.pageDatas = {
+            currentCateId:9999,
             categoryList:DataAPI.get($scope.ctgListReqOptions)
         };
         DataAPI.get($scope.lcsListReqOptions)
@@ -135,6 +134,7 @@ angular.module('fbs.controllers')
 
 
         $scope.maindata={
+            K9:0,
             Name:"",
             Phone:"",
             K1:1,
@@ -159,7 +159,7 @@ angular.module('fbs.controllers')
             }
         }
         $scope.maindata.K13=$scope.maindata.K13.substring(0, $scope.maindata.K13.length-1)
-        
+
         for(bb in $scope.checkboxdata2){
             if($scope.checkboxdata2[bb].checked == true){
                 $scope.maindata.K15 +=$scope.checkboxdata2[bb].name+",";
@@ -175,7 +175,7 @@ angular.module('fbs.controllers')
             mainurl+= "&"+cc+"="+$scope.maindata[cc];
         }
         mainurl+="&callback=JSON_CALLBACK";
-    
+
         $http.jsonp(mainurl)
         .success(function(data){
             if(!data.errcode){
@@ -194,23 +194,37 @@ angular.module('fbs.controllers')
 
 })
 .controller('licaishiHistoryCtrl',function($scope,DataAPI) {
-        DataAPI.get({
-          action:'getmasternumberlist'
-        }).$promise.then(function(resp) {
-            $scope.jieshu = resp;
-            $scope.currentJ = resp.totalcount - 2;
-        });
-        $scope.lcsListReqOptions = {
-            action:'getmasterlist',
-            pageindex:1,
-            pagesize:10,
-            number:$scope.currentJ,
-            sort:'time'
-        };
-        DataAPI.get($scope.lcsListReqOptions).$promise.then(function(resp) {
-            $scope.licaishi_list = resp.list;
-        });
-        $scope.left_disabled = false;
+    $scope.articleListReqOptions = {
+      action:'getnewslist',
+      cateid:499,
+      pageindex:1,
+      pagesize:10,
+      keyword:''
+    };
+    $scope.pageDatas =  {};
+    $scope.loading_show = true;
+    DataAPI.get($scope.articleListReqOptions)
+      .$promise.then(function(req){
+        $scope.pageDatas.articleList = req;
+        $scope.loading_show = false;
+      });
+        //DataAPI.get({
+        //  action:'getmasternumberlist'
+        //}).$promise.then(function(resp) {
+        //    $scope.jieshu = resp;
+        //    $scope.currentJ = resp.totalcount - 2;
+        //});
+        //$scope.lcsListReqOptions = {
+        //    action:'getmasterlist',
+        //    pageindex:1,
+        //    pagesize:10,
+        //    number:$scope.currentJ,
+        //    sort:'time'
+        //};
+        //DataAPI.get($scope.lcsListReqOptions).$promise.then(function(resp) {
+        //    $scope.licaishi_list = resp.list;
+        //});
+        //$scope.left_disabled = false;
 });
 
 

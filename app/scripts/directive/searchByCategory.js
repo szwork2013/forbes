@@ -6,8 +6,12 @@ angular.module('fbs.directives')
     function link(scope, element, attrs) {
         element.bind('click', function() {
             scope.$apply(function() {
-                scope.categoryAera = false;
-                scope.reqOptions.cateid = scope.categoryId;
+                var current_id = attrs.categoryId;
+                scope.reqOptions.cateid = current_id;
+                if(current_id == 9999){
+                  scope.reqOptions.cateid = null;
+                }
+                scope.current = current_id;
                 scope.targetDatas = DataAPI.get(scope.reqOptions);
             });
         });
@@ -15,10 +19,9 @@ angular.module('fbs.directives')
     return {
         restrict: "A",
         scope: {
-            categoryId: '=',
             reqOptions:'=',
             targetDatas:'=',
-            categoryAera:'='
+            current:'='
         },
         link: link
     };

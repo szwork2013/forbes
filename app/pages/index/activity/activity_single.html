@@ -44,12 +44,15 @@
                 </div>
                 <div style="clear:both;"></div>
                 <div class="activity_status">
-                    <div ng-class="{triangle:true,activity_status_over:activity.status != 0} ">
+                    <div ng-class="{triangle:activity.status == 0,activity_status_over:activity.status != 0}">
                     </div>
                     <p>
                         {{activity.status | activityStatusTextFilter}}
                     </p>
                 </div>
+              <div class="activity_jf">
+                {{activity.score}}积分
+              </div>
             </div>
             <div class="apply_form" id="aply_f" ng-show='apply_form.show'>
                 <div class="apply_titel">

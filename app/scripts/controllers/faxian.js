@@ -11,8 +11,7 @@ angular.module('fbs.controllers')
         action:'getnewsdetail',
         newsid: 294991
     }).$promise.then(function(resp) {
-            $scope.pxintro  =resp;
-                console.log(resp);
+            $scope.article  =resp;
         });
     $scope.SkipValidation = function(value) {
         return $sce.trustAsHtml(value);
